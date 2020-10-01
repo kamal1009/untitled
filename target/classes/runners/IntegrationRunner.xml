@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practise Project for Zomato" parallel="methods">
+    <test name="Free CRM App Test Cases">
+        <classes>
+            <class name="tests.restaurant.RestaurantApiTest"></class>
+            <class name="tests.restaurant.SearchApiTest"></class>
+            <class name="tests.location.RestaurantInLocation"></class>
+            <class name="tests.location.LocationAPITests"></class>
+            <class name="tests.commonAPI.CommonAPITests"></class>
+        </classes>
+    </test>
+</suite>

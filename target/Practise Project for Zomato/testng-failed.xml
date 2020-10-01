@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Practise Project for Zomato]" parallel="methods">
+  <test thread-count="5" name="Free CRM App Test Cases(failed)" parallel="methods">
+    <classes>
+      <class name="tests.commonAPI.CommonAPITests">
+        <methods>
+          <include name="getCityWithInvalidQParam" invocation-numbers="0 1"/>
+          <include name="getCollectionWithInvalidCityId"/>
+          <include name="getCollectionWithInvalidLocation"/>
+          <include name="getCityWithDiffCount" invocation-numbers="0 1"/>
+          <include name="getCityWithDiffParam" invocation-numbers="1 11"/>
+          <include name="getCityWithInvalidIdNameCombination"/>
+          <include name="getCitiesWithInvalidLocation"/>
+        </methods>
+      </class> <!-- tests.commonAPI.CommonAPITests -->
+      <class name="tests.location.LocationAPITests">
+        <methods>
+          <include name="getLocationWithName" invocation-numbers="1"/>
+          <include name="getLocationMissingParam"/>
+          <include name="getLocationMissingParam" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- tests.location.LocationAPITests -->
+      <class name="tests.restaurant.RestaurantApiTest">
+        <methods>
+          <include name="getRestaurantReviewNegativeCases" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- tests.restaurant.RestaurantApiTest -->
+      <class name="tests.restaurant.SearchApiTest">
+        <methods>
+          <include name="searchByInvalidLocation"/>
+        </methods>
+      </class> <!-- tests.restaurant.SearchApiTest -->
+    </classes>
+  </test> <!-- Free CRM App Test Cases(failed) -->
+</suite> <!-- Failed suite [Practise Project for Zomato] -->

@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "reviews_count": {
+      "$id": "#/properties/reviews_count",
+      "type": "integer"
+    },
+    "reviews_start": {
+      "$id": "#/properties/reviews_start",
+      "type": "integer"
+    },
+    "reviews_shown": {
+      "$id": "#/properties/reviews_shown",
+      "type": "integer"
+    },
+    "user_reviews": {
+      "$id": "#/properties/user_reviews",
+      "type": "array",
+      "items": {
+        "$id": "#/properties/user_reviews/items",
+        "type": "object",
+        "required": [],
+        "properties": {
+          "review": {
+            "$id": "#/properties/user_reviews/items/properties/review",
+            "type": "object",
+            "required": [],
+            "properties": {
+              "rating": {
+                "$id": "#/properties/user_reviews/items/properties/review/properties/rating",
+                "type": "integer"
+              },
+              "review_text": {
+                "$id": "#/properties/user_reviews/items/properties/review/properties/review_text",
+                "type": "string"
+              },
+              "id": {
+                "$id": "#/properties/user_reviews/items/properties/review/properties/id",
+                "type": "integer"
+              },
+              "rating_color": {
+                "$id": "#/properties/user_reviews/items/properties/review/properties/rating_color",
+                "type": "string"
+              },
+              "review_time_friendly": {
+                "$id": "#/properties/user_reviews/items/properties/review/properties/review_time_friendly",
+                "type": "string"
+              },
+              "rating_text": {
+                "$id": "#/properties/user_reviews/items/properties/review/properties/rating_text",
+                "type": "string"
+              },
+              "timestamp": {
+                "$id": "#/properties/user_reviews/items/properties/review/properties/timestamp",
+                "type": "integer"
+              },
+              "likes": {
+                "$id": "#/properties/user_reviews/items/properties/review/properties/likes",
+                "type": "integer"
+              },
+              "user": {
+                "$id": "#/properties/user_reviews/items/properties/review/properties/user",
+                "type": "object",
+                "required": [],
+                "properties": {
+                  "name": {
+                    "$id": "#/properties/user_reviews/items/properties/review/properties/user/properties/name",
+                    "type": "string"
+                  },
+                  "zomato_handle": {
+                    "$id": "#/properties/user_reviews/items/properties/review/properties/user/properties/zomato_handle",
+                    "type": "string"
+                  },
+                  "foodie_color": {
+                    "$id": "#/properties/user_reviews/items/properties/review/properties/user/properties/foodie_color",
+                    "type": "string"
+                  },
+                  "profile_url": {
+                    "$id": "#/properties/user_reviews/items/properties/review/properties/user/properties/profile_url",
+                    "type": "string"
+                  },
+                  "profile_image": {
+                    "$id": "#/properties/user_reviews/items/properties/review/properties/user/properties/profile_image",
+                    "type": "string"
+                  },
+                  "profile_deeplink": {
+                    "$id": "#/properties/user_reviews/items/properties/review/properties/user/properties/profile_deeplink",
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "comments_count": {
+                "$id": "#/properties/user_reviews/items/properties/review/properties/comments_count",
+                "type": "integer"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

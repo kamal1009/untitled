@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "location_suggestions": {
+      "$id": "#/properties/location_suggestions",
+      "type": "array",
+      "items": {
+        "$id": "#/properties/location_suggestions/items",
+        "type": "object",
+        "required": [],
+        "properties": {
+          "id": {
+            "$id": "#/properties/location_suggestions/items/properties/id",
+            "type": "integer"
+          },
+          "name": {
+            "$id": "#/properties/location_suggestions/items/properties/name",
+            "type": "string"
+          },
+          "country_id": {
+            "$id": "#/properties/location_suggestions/items/properties/country_id",
+            "type": "integer"
+          },
+          "country_name": {
+            "$id": "#/properties/location_suggestions/items/properties/country_name",
+            "type": "string"
+          },
+          "country_flag_url": {
+            "$id": "#/properties/location_suggestions/items/properties/country_flag_url",
+            "type": "string"
+          },
+          "should_experiment_with": {
+            "$id": "#/properties/location_suggestions/items/properties/should_experiment_with",
+            "type": "integer"
+          },
+          "has_go_out_tab": {
+            "$id": "#/properties/location_suggestions/items/properties/has_go_out_tab",
+            "type": "integer"
+          },
+          "discovery_enabled": {
+            "$id": "#/properties/location_suggestions/items/properties/discovery_enabled",
+            "type": "integer"
+          },
+          "has_new_ad_format": {
+            "$id": "#/properties/location_suggestions/items/properties/has_new_ad_format",
+            "type": "integer"
+          },
+          "is_state": {
+            "$id": "#/properties/location_suggestions/items/properties/is_state",
+            "type": "integer"
+          },
+          "state_id": {
+            "$id": "#/properties/location_suggestions/items/properties/state_id",
+            "type": "integer"
+          },
+          "state_name": {
+            "$id": "#/properties/location_suggestions/items/properties/state_name",
+            "type": "string"
+          },
+          "state_code": {
+            "$id": "#/properties/location_suggestions/items/properties/state_code",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "status": {
+      "$id": "#/properties/status",
+      "type": "string"
+    },
+    "has_more": {
+      "$id": "#/properties/has_more",
+      "type": "integer"
+    },
+    "has_total": {
+      "$id": "#/properties/has_total",
+      "type": "integer"
+    },
+    "user_has_addresses": {
+      "$id": "#/properties/user_has_addresses",
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

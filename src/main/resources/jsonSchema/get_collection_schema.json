@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "collections": {
+      "$id": "#/properties/collections",
+      "type": "array",
+      "items": {
+        "$id": "#/properties/collections/items",
+        "type": "object",
+        "required": [],
+        "properties": {
+          "collection": {
+            "$id": "#/properties/collections/items/properties/collection",
+            "type": "object",
+            "required": [],
+            "properties": {
+              "collection_id": {
+                "$id": "#/properties/collections/items/properties/collection/properties/collection_id",
+                "type": "integer"
+              },
+              "res_count": {
+                "$id": "#/properties/collections/items/properties/collection/properties/res_count",
+                "type": "integer"
+              },
+              "image_url": {
+                "$id": "#/properties/collections/items/properties/collection/properties/image_url",
+                "type": "string"
+              },
+              "url": {
+                "$id": "#/properties/collections/items/properties/collection/properties/url",
+                "type": "string"
+              },
+              "title": {
+                "$id": "#/properties/collections/items/properties/collection/properties/title",
+                "type": "string"
+              },
+              "description": {
+                "$id": "#/properties/collections/items/properties/collection/properties/description",
+                "type": "string"
+              },
+              "share_url": {
+                "$id": "#/properties/collections/items/properties/collection/properties/share_url",
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "has_more": {
+      "$id": "#/properties/has_more",
+      "type": "integer"
+    },
+    "share_url": {
+      "$id": "#/properties/share_url",
+      "type": "string"
+    },
+    "display_text": {
+      "$id": "#/properties/display_text",
+      "type": "string"
+    },
+    "has_total": {
+      "$id": "#/properties/has_total",
+      "type": "integer"
+    },
+    "user_has_addresses": {
+      "$id": "#/properties/user_has_addresses",
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

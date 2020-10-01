@@ -1,0 +1,2469 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 18 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Practise_Project_for_Zomato">
+              <span class="suite-name border-failed">Practise Project for Zomato</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Practise_Project_for_Zomato">
+                    <span>IntegrationRunner.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Practise_Project_for_Zomato">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Practise_Project_for_Zomato">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Practise_Project_for_Zomato">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Practise_Project_for_Zomato">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Practise_Project_for_Zomato">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Practise_Project_for_Zomato">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">85 methods, 18 failed,   67 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Practise_Project_for_Zomato" class="hide-methods failed suite-Practise_Project_for_Zomato"> (hide)</a> <!-- hide-methods failed suite-Practise_Project_for_Zomato -->
+                      <a href="#" panel-name="suite-Practise_Project_for_Zomato" class="show-methods failed suite-Practise_Project_for_Zomato"> (show)</a> <!-- show-methods failed suite-Practise_Project_for_Zomato -->
+                    </span>
+                    <div class="method-list-content failed suite-Practise_Project_for_Zomato">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCitiesWithInvalidLocation">getCitiesWithInvalidLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffCount(q, Ba, 11, 11)">getCityWithDiffCount(q, Ba, 11, 11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffCount(q, Ba, 0, 0)">getCityWithDiffCount(q, Ba, 0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffParam(q, oAYMqMpDA, 0)">getCityWithDiffParam(q, oAYMqMpDA, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffParam(q, 1,1,1,1,1, 1)">getCityWithDiffParam(q, 1,1,1,1,1, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithInvalidIdNameCombination">getCityWithInvalidIdNameCombination</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithInvalidQParam(RCiZ, Ba)">getCityWithInvalidQParam(RCiZ, Ba)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithInvalidQParam(gHs, 1)">getCityWithInvalidQParam(gHs, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCollectionWithInvalidCityId">getCollectionWithInvalidCityId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCollectionWithInvalidLocation">getCollectionWithInvalidLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.LocationAPITests" hash-for-method="getLocationMissingParam">getLocationMissingParam</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.LocationAPITests" hash-for-method="getLocationMissingParam(ypTW, Ba)">getLocationMissingParam(ypTW, Ba)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.LocationAPITests" hash-for-method="getLocationMissingParam(Cip, 1)">getLocationMissingParam(Cip, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.LocationAPITests" hash-for-method="getLocationWithName(NAGARAJA_GARDEN)">getLocationWithName(NAGARAJA_GARDEN)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.RestaurantApiTest" hash-for-method="getRestaurantReviewNegativeCases(res_id, abc)">getRestaurantReviewNegativeCases(res_id, abc)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.RestaurantApiTest" hash-for-method="getRestaurantReviewNegativeCases(start, 10)">getRestaurantReviewNegativeCases(start, 10)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.RestaurantApiTest" hash-for-method="getRestaurantReviewNegativeCases(count, 10)">getRestaurantReviewNegativeCases(count, 10)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.SearchApiTest" hash-for-method="searchByInvalidLocation">searchByInvalidLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Practise_Project_for_Zomato -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Practise_Project_for_Zomato" class="hide-methods passed suite-Practise_Project_for_Zomato"> (hide)</a> <!-- hide-methods passed suite-Practise_Project_for_Zomato -->
+                      <a href="#" panel-name="suite-Practise_Project_for_Zomato" class="show-methods passed suite-Practise_Project_for_Zomato"> (show)</a> <!-- show-methods passed suite-Practise_Project_for_Zomato -->
+                    </span>
+                    <div class="method-list-content passed suite-Practise_Project_for_Zomato">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCategoriesTest">getCategoriesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffCount(q, Ba, 2, 2)">getCityWithDiffCount(q, Ba, 2, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffParam(q, null, 0)">getCityWithDiffParam(q, null, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffParam(city_ids, a, 0)">getCityWithDiffParam(city_ids, a, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffParam(q, null, 0)">getCityWithDiffParam(q, null, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffParam(q, haryana, 0)">getCityWithDiffParam(q, haryana, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffParam(q,  H  I  S  A  R, 1)">getCityWithDiffParam(q,  H  I  S  A  R, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffParam(city_ids, 0, 0)">getCityWithDiffParam(city_ids, 0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffParam(city_ids, 1.0, 1)">getCityWithDiffParam(city_ids, 1.0, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffParam(city_ids, 1234543212, 0)">getCityWithDiffParam(city_ids, 1234543212, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffParam(q, a, 0)">getCityWithDiffParam(q, a, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithDiffParam(city_ids, -1, 0)">getCityWithDiffParam(city_ids, -1, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithIdAndName(MUMBAI)">getCityWithIdAndName(MUMBAI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithIdAndName(NEW_YORK)">getCityWithIdAndName(NEW_YORK)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithIdAndName(DELHI)">getCityWithIdAndName(DELHI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithIdAndName(BANGALORE)">getCityWithIdAndName(BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithIdOnly(MUMBAI)">getCityWithIdOnly(MUMBAI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithIdOnly(BANGALORE)">getCityWithIdOnly(BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithIdOnly(DELHI)">getCityWithIdOnly(DELHI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithIdOnly(NEW_YORK)">getCityWithIdOnly(NEW_YORK)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithLocation(DELHI)">getCityWithLocation(DELHI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithLocation(MUMBAI)">getCityWithLocation(MUMBAI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithLocation(NEW_YORK)">getCityWithLocation(NEW_YORK)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithLocation(BANGALORE)">getCityWithLocation(BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithName(NEW_YORK)">getCityWithName(NEW_YORK)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithName(BANGALORE)">getCityWithName(BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithName(MUMBAI)">getCityWithName(MUMBAI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCityWithName(DELHI)">getCityWithName(DELHI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCollectionWithCityId(NEW_YORK)">getCollectionWithCityId(NEW_YORK)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCollectionWithCityId(MUMBAI)">getCollectionWithCityId(MUMBAI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCollectionWithCityId(BANGALORE)">getCollectionWithCityId(BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCollectionWithCityId(DELHI)">getCollectionWithCityId(DELHI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCollectionWithInvalidQParam(HPp, 1)">getCollectionWithInvalidQParam(HPp, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCollectionWithInvalidQParam(MoMM, Ba)">getCollectionWithInvalidQParam(MoMM, Ba)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCollectionWithLocation(BANGALORE)">getCollectionWithLocation(BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCollectionWithLocation(DELHI)">getCollectionWithLocation(DELHI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCollectionWithLocation(NEW_YORK)">getCollectionWithLocation(NEW_YORK)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.commonAPI.CommonAPITests" hash-for-method="getCollectionWithLocation(MUMBAI)">getCollectionWithLocation(MUMBAI)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.LocationAPITests" hash-for-method="getLocationWithCoordinate(KORAMANGALA_BANGALORE)">getLocationWithCoordinate(KORAMANGALA_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.LocationAPITests" hash-for-method="getLocationWithCoordinate(KORAMANGALA_1ST_BLOCK_BANGALORE)">getLocationWithCoordinate(KORAMANGALA_1ST_BLOCK_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.LocationAPITests" hash-for-method="getLocationWithCoordinate(NAGARAJA_GARDEN)">getLocationWithCoordinate(NAGARAJA_GARDEN)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.LocationAPITests" hash-for-method="getLocationWithCoordinate(NAGPUR)">getLocationWithCoordinate(NAGPUR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.LocationAPITests" hash-for-method="getLocationWithName(KORAMANGALA_1ST_BLOCK_BANGALORE)">getLocationWithName(KORAMANGALA_1ST_BLOCK_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.LocationAPITests" hash-for-method="getLocationWithName(NAGPUR)">getLocationWithName(NAGPUR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.LocationAPITests" hash-for-method="getLocationWithName(KORAMANGALA_BANGALORE)">getLocationWithName(KORAMANGALA_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.RestaurantApiTest" hash-for-method="getRestaurantById(NAGARAJA_GARDEN)">getRestaurantById(NAGARAJA_GARDEN)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.RestaurantApiTest" hash-for-method="getRestaurantById(NAGPUR)">getRestaurantById(NAGPUR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.RestaurantApiTest" hash-for-method="getRestaurantById(KORAMANGALA_1ST_BLOCK_BANGALORE)">getRestaurantById(KORAMANGALA_1ST_BLOCK_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.RestaurantApiTest" hash-for-method="getRestaurantById(KORAMANGALA_BANGALORE)">getRestaurantById(KORAMANGALA_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.RestaurantApiTest" hash-for-method="getRestaurantReview">getRestaurantReview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.RestaurantInLocation" hash-for-method="getRestaurantWithInvalidLocation(KORAMANGALA_1ST_BLOCK_BANGALORE)">getRestaurantWithInvalidLocation(KORAMANGALA_1ST_BLOCK_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.RestaurantInLocation" hash-for-method="getRestaurantWithInvalidLocation(NAGPUR)">getRestaurantWithInvalidLocation(NAGPUR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.RestaurantInLocation" hash-for-method="getRestaurantWithInvalidLocation(KORAMANGALA_BANGALORE)">getRestaurantWithInvalidLocation(KORAMANGALA_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.RestaurantInLocation" hash-for-method="getRestaurantWithInvalidLocation(NAGARAJA_GARDEN)">getRestaurantWithInvalidLocation(NAGARAJA_GARDEN)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.RestaurantInLocation" hash-for-method="getRestaurantWithLocation(NAGPUR)">getRestaurantWithLocation(NAGPUR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.RestaurantInLocation" hash-for-method="getRestaurantWithLocation(KORAMANGALA_1ST_BLOCK_BANGALORE)">getRestaurantWithLocation(KORAMANGALA_1ST_BLOCK_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.RestaurantInLocation" hash-for-method="getRestaurantWithLocation(KORAMANGALA_BANGALORE)">getRestaurantWithLocation(KORAMANGALA_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.RestaurantInLocation" hash-for-method="getRestaurantWithLocation(NAGARAJA_GARDEN)">getRestaurantWithLocation(NAGARAJA_GARDEN)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.RestaurantInLocation" hash-for-method="getRestaurantWithMissingParam(NAGARAJA_GARDEN)">getRestaurantWithMissingParam(NAGARAJA_GARDEN)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.RestaurantInLocation" hash-for-method="getRestaurantWithMissingParam(KORAMANGALA_1ST_BLOCK_BANGALORE)">getRestaurantWithMissingParam(KORAMANGALA_1ST_BLOCK_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.RestaurantInLocation" hash-for-method="getRestaurantWithMissingParam(KORAMANGALA_BANGALORE)">getRestaurantWithMissingParam(KORAMANGALA_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.location.RestaurantInLocation" hash-for-method="getRestaurantWithMissingParam(NAGPUR)">getRestaurantWithMissingParam(NAGPUR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.SearchApiTest" hash-for-method="searchByCoordinate">searchByCoordinate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.SearchApiTest" hash-for-method="searchByLocation(KORAMANGALA_BANGALORE)">searchByLocation(KORAMANGALA_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.SearchApiTest" hash-for-method="searchByLocation(NAGPUR)">searchByLocation(NAGPUR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.SearchApiTest" hash-for-method="searchByLocation(NAGARAJA_GARDEN)">searchByLocation(NAGARAJA_GARDEN)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Practise_Project_for_Zomato" title="tests.restaurant.SearchApiTest" hash-for-method="searchByLocation(KORAMANGALA_1ST_BLOCK_BANGALORE)">searchByLocation(KORAMANGALA_1ST_BLOCK_BANGALORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Practise_Project_for_Zomato -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Practise_Project_for_Zomato" class="panel Practise_Project_for_Zomato">
+          <div class="suite-Practise_Project_for_Zomato-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.commonAPI.CommonAPITests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCitiesWithInvalidLocation">
+                  </a> <!-- getCitiesWithInvalidLocation -->
+                  <span class="method-name">getCitiesWithInvalidLocation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [500]
+	at apiCalls.Common.getCities(Common.java:48)
+	at tests.commonAPI.CommonAPITests.getCitiesWithInvalidLocation(CommonAPITests.java:174)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffCount(q, Ba, 11, 11)">
+                  </a> <!-- getCityWithDiffCount(q, Ba, 11, 11) -->
+                  <span class="method-name">getCityWithDiffCount</span>
+                  <span class="parameters">(q, Ba, 11, 11)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [11] but found [10]
+	at tests.commonAPI.CommonAPITests.getCityWithDiffCount(CommonAPITests.java:86)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate get City when count param is passed in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffCount(q, Ba, 0, 0)">
+                  </a> <!-- getCityWithDiffCount(q, Ba, 0, 0) -->
+                  <span class="method-name">getCityWithDiffCount</span>
+                  <span class="parameters">(q, Ba, 0, 0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0] but found [10]
+	at tests.commonAPI.CommonAPITests.getCityWithDiffCount(CommonAPITests.java:86)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate get City when count param is passed in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffParam(q, oAYMqMpDA, 0)">
+                  </a> <!-- getCityWithDiffParam(q, oAYMqMpDA, 0) -->
+                  <span class="method-name">getCityWithDiffParam</span>
+                  <span class="parameters">(q, oAYMqMpDA, 0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0] but found [3]
+	at tests.commonAPI.CommonAPITests.getCityWithDiffParam(CommonAPITests.java:77)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffParam(q, 1,1,1,1,1, 1)">
+                  </a> <!-- getCityWithDiffParam(q, 1,1,1,1,1, 1) -->
+                  <span class="method-name">getCityWithDiffParam</span>
+                  <span class="parameters">(q, 1,1,1,1,1, 1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1] but found [0]
+	at tests.commonAPI.CommonAPITests.getCityWithDiffParam(CommonAPITests.java:77)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithInvalidIdNameCombination">
+                  </a> <!-- getCityWithInvalidIdNameCombination -->
+                  <span class="method-name">getCityWithInvalidIdNameCombination</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0] but found [1]
+	at tests.commonAPI.CommonAPITests.getCityWithInvalidIdNameCombination(CommonAPITests.java:134)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate when invalid combination of qParam is passed in request for get cities API)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithInvalidQParam(RCiZ, Ba)">
+                  </a> <!-- getCityWithInvalidQParam(RCiZ, Ba) -->
+                  <span class="method-name">getCityWithInvalidQParam</span>
+                  <span class="parameters">(RCiZ, Ba)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at apiCalls.Common.getCities(Common.java:48)
+	at tests.commonAPI.CommonAPITests.getCityWithInvalidQParam(CommonAPITests.java:93)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate get Cities api when wrong Qparam is passed in request ideally API should through Bad request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithInvalidQParam(gHs, 1)">
+                  </a> <!-- getCityWithInvalidQParam(gHs, 1) -->
+                  <span class="method-name">getCityWithInvalidQParam</span>
+                  <span class="parameters">(gHs, 1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at apiCalls.Common.getCities(Common.java:48)
+	at tests.commonAPI.CommonAPITests.getCityWithInvalidQParam(CommonAPITests.java:93)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate get Cities api when wrong Qparam is passed in request ideally API should through Bad request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollectionWithInvalidCityId">
+                  </a> <!-- getCollectionWithInvalidCityId -->
+                  <span class="method-name">getCollectionWithInvalidCityId</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at apiCalls.Common.getCollection(Common.java:60)
+	at tests.commonAPI.CommonAPITests.getCollectionWithInvalidCityId(CommonAPITests.java:181)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollectionWithInvalidLocation">
+                  </a> <!-- getCollectionWithInvalidLocation -->
+                  <span class="method-name">getCollectionWithInvalidLocation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [500]
+	at apiCalls.Common.getCollection(Common.java:60)
+	at tests.commonAPI.CommonAPITests.getCollectionWithInvalidLocation(CommonAPITests.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Practise_Project_for_Zomato-class-failed -->
+          <div class="suite-Practise_Project_for_Zomato-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.location.LocationAPITests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLocationMissingParam">
+                  </a> <!-- getLocationMissingParam -->
+                  <span class="method-name">getLocationMissingParam</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at apiCalls.Location.getLocation(Location.java:32)
+	at tests.location.LocationAPITests.getLocationMissingParam(LocationAPITests.java:61)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate get location api when query params are missing)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLocationMissingParam(ypTW, Ba)">
+                  </a> <!-- getLocationMissingParam(ypTW, Ba) -->
+                  <span class="method-name">getLocationMissingParam</span>
+                  <span class="parameters">(ypTW, Ba)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at apiCalls.Location.getLocation(Location.java:32)
+	at tests.location.LocationAPITests.getLocationMissingParam(LocationAPITests.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate get location api when invalid param are sent in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLocationMissingParam(Cip, 1)">
+                  </a> <!-- getLocationMissingParam(Cip, 1) -->
+                  <span class="method-name">getLocationMissingParam</span>
+                  <span class="parameters">(Cip, 1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at apiCalls.Location.getLocation(Location.java:32)
+	at tests.location.LocationAPITests.getLocationMissingParam(LocationAPITests.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate get location api when invalid param are sent in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLocationWithName(NAGARAJA_GARDEN)">
+                  </a> <!-- getLocationWithName(NAGARAJA_GARDEN) -->
+                  <span class="method-name">getLocationWithName</span>
+                  <span class="parameters">(NAGARAJA_GARDEN)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [zomato_place] but found [city]
+	at tests.location.LocationAPITests.validateLocationData(LocationAPITests.java:74)
+	at tests.location.LocationAPITests.getLocationWithName(LocationAPITests.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate get location with name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Practise_Project_for_Zomato-class-failed -->
+          <div class="suite-Practise_Project_for_Zomato-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.restaurant.RestaurantApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantReviewNegativeCases(res_id, abc)">
+                  </a> <!-- getRestaurantReviewNegativeCases(res_id, abc) -->
+                  <span class="method-name">getRestaurantReviewNegativeCases</span>
+                  <span class="parameters">(res_id, abc)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [500]
+	at apiCalls.Location.getRestaurantReview(Location.java:80)
+	at tests.restaurant.RestaurantApiTest.getRestaurantReviewNegativeCases(RestaurantApiTest.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate Positive cases for Review API)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantReviewNegativeCases(start, 10)">
+                  </a> <!-- getRestaurantReviewNegativeCases(start, 10) -->
+                  <span class="method-name">getRestaurantReviewNegativeCases</span>
+                  <span class="parameters">(start, 10)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at apiCalls.Location.getRestaurantReview(Location.java:80)
+	at tests.restaurant.RestaurantApiTest.getRestaurantReviewNegativeCases(RestaurantApiTest.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate Positive cases for Review API)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantReviewNegativeCases(count, 10)">
+                  </a> <!-- getRestaurantReviewNegativeCases(count, 10) -->
+                  <span class="method-name">getRestaurantReviewNegativeCases</span>
+                  <span class="parameters">(count, 10)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at apiCalls.Location.getRestaurantReview(Location.java:80)
+	at tests.restaurant.RestaurantApiTest.getRestaurantReviewNegativeCases(RestaurantApiTest.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate Positive cases for Review API)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Practise_Project_for_Zomato-class-failed -->
+          <div class="suite-Practise_Project_for_Zomato-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.restaurant.SearchApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByInvalidLocation">
+                  </a> <!-- searchByInvalidLocation -->
+                  <span class="method-name">searchByInvalidLocation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [200]
+	at apiCalls.Location.searchRestaurant(Location.java:56)
+	at tests.restaurant.SearchApiTest.searchByInvalidLocation(SearchApiTest.java:41)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test case is to validate search api where invalid entity id is passed in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Practise_Project_for_Zomato-class-failed -->
+          <div class="suite-Practise_Project_for_Zomato-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.commonAPI.CommonAPITests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCategoriesTest">
+                  </a> <!-- getCategoriesTest -->
+                  <span class="method-name">getCategoriesTest</span>
+                  <em>
+(This test case is to validate get Categories API to positive flow. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffCount(q, Ba, 2, 2)">
+                  </a> <!-- getCityWithDiffCount(q, Ba, 2, 2) -->
+                  <span class="method-name">getCityWithDiffCount</span>
+                  <span class="parameters">(q, Ba, 2, 2)</span>
+                  <em>
+(This test case is to validate get City when count param is passed in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffParam(q, null, 0)">
+                  </a> <!-- getCityWithDiffParam(q, null, 0) -->
+                  <span class="method-name">getCityWithDiffParam</span>
+                  <span class="parameters">(q, null, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffParam(city_ids, a, 0)">
+                  </a> <!-- getCityWithDiffParam(city_ids, a, 0) -->
+                  <span class="method-name">getCityWithDiffParam</span>
+                  <span class="parameters">(city_ids, a, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffParam(q, null, 0)">
+                  </a> <!-- getCityWithDiffParam(q, null, 0) -->
+                  <span class="method-name">getCityWithDiffParam</span>
+                  <span class="parameters">(q, null, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffParam(q, haryana, 0)">
+                  </a> <!-- getCityWithDiffParam(q, haryana, 0) -->
+                  <span class="method-name">getCityWithDiffParam</span>
+                  <span class="parameters">(q, haryana, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffParam(q,  H  I  S  A  R, 1)">
+                  </a> <!-- getCityWithDiffParam(q,  H  I  S  A  R, 1) -->
+                  <span class="method-name">getCityWithDiffParam</span>
+                  <span class="parameters">(q,  H  I  S  A  R, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffParam(city_ids, 0, 0)">
+                  </a> <!-- getCityWithDiffParam(city_ids, 0, 0) -->
+                  <span class="method-name">getCityWithDiffParam</span>
+                  <span class="parameters">(city_ids, 0, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffParam(city_ids, 1.0, 1)">
+                  </a> <!-- getCityWithDiffParam(city_ids, 1.0, 1) -->
+                  <span class="method-name">getCityWithDiffParam</span>
+                  <span class="parameters">(city_ids, 1.0, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffParam(city_ids, 1234543212, 0)">
+                  </a> <!-- getCityWithDiffParam(city_ids, 1234543212, 0) -->
+                  <span class="method-name">getCityWithDiffParam</span>
+                  <span class="parameters">(city_ids, 1234543212, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffParam(q, a, 0)">
+                  </a> <!-- getCityWithDiffParam(q, a, 0) -->
+                  <span class="method-name">getCityWithDiffParam</span>
+                  <span class="parameters">(q, a, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithDiffParam(city_ids, -1, 0)">
+                  </a> <!-- getCityWithDiffParam(city_ids, -1, 0) -->
+                  <span class="method-name">getCityWithDiffParam</span>
+                  <span class="parameters">(city_ids, -1, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithIdAndName(MUMBAI)">
+                  </a> <!-- getCityWithIdAndName(MUMBAI) -->
+                  <span class="method-name">getCityWithIdAndName</span>
+                  <span class="parameters">(MUMBAI)</span>
+                  <em>
+(This test case is validate get city name when invalid qParam is passed in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithIdAndName(NEW_YORK)">
+                  </a> <!-- getCityWithIdAndName(NEW_YORK) -->
+                  <span class="method-name">getCityWithIdAndName</span>
+                  <span class="parameters">(NEW_YORK)</span>
+                  <em>
+(This test case is validate get city name when invalid qParam is passed in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithIdAndName(DELHI)">
+                  </a> <!-- getCityWithIdAndName(DELHI) -->
+                  <span class="method-name">getCityWithIdAndName</span>
+                  <span class="parameters">(DELHI)</span>
+                  <em>
+(This test case is validate get city name when invalid qParam is passed in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithIdAndName(BANGALORE)">
+                  </a> <!-- getCityWithIdAndName(BANGALORE) -->
+                  <span class="method-name">getCityWithIdAndName</span>
+                  <span class="parameters">(BANGALORE)</span>
+                  <em>
+(This test case is validate get city name when invalid qParam is passed in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithIdOnly(MUMBAI)">
+                  </a> <!-- getCityWithIdOnly(MUMBAI) -->
+                  <span class="method-name">getCityWithIdOnly</span>
+                  <span class="parameters">(MUMBAI)</span>
+                  <em>
+(This test case is to validate get city With ID positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithIdOnly(BANGALORE)">
+                  </a> <!-- getCityWithIdOnly(BANGALORE) -->
+                  <span class="method-name">getCityWithIdOnly</span>
+                  <span class="parameters">(BANGALORE)</span>
+                  <em>
+(This test case is to validate get city With ID positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithIdOnly(DELHI)">
+                  </a> <!-- getCityWithIdOnly(DELHI) -->
+                  <span class="method-name">getCityWithIdOnly</span>
+                  <span class="parameters">(DELHI)</span>
+                  <em>
+(This test case is to validate get city With ID positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithIdOnly(NEW_YORK)">
+                  </a> <!-- getCityWithIdOnly(NEW_YORK) -->
+                  <span class="method-name">getCityWithIdOnly</span>
+                  <span class="parameters">(NEW_YORK)</span>
+                  <em>
+(This test case is to validate get city With ID positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithLocation(DELHI)">
+                  </a> <!-- getCityWithLocation(DELHI) -->
+                  <span class="method-name">getCityWithLocation</span>
+                  <span class="parameters">(DELHI)</span>
+                  <em>
+(This Test case is to validate get City API when Location is passed in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithLocation(MUMBAI)">
+                  </a> <!-- getCityWithLocation(MUMBAI) -->
+                  <span class="method-name">getCityWithLocation</span>
+                  <span class="parameters">(MUMBAI)</span>
+                  <em>
+(This Test case is to validate get City API when Location is passed in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithLocation(NEW_YORK)">
+                  </a> <!-- getCityWithLocation(NEW_YORK) -->
+                  <span class="method-name">getCityWithLocation</span>
+                  <span class="parameters">(NEW_YORK)</span>
+                  <em>
+(This Test case is to validate get City API when Location is passed in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithLocation(BANGALORE)">
+                  </a> <!-- getCityWithLocation(BANGALORE) -->
+                  <span class="method-name">getCityWithLocation</span>
+                  <span class="parameters">(BANGALORE)</span>
+                  <em>
+(This Test case is to validate get City API when Location is passed in request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithName(NEW_YORK)">
+                  </a> <!-- getCityWithName(NEW_YORK) -->
+                  <span class="method-name">getCityWithName</span>
+                  <span class="parameters">(NEW_YORK)</span>
+                  <em>
+(This test case is to validate get city With name positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithName(BANGALORE)">
+                  </a> <!-- getCityWithName(BANGALORE) -->
+                  <span class="method-name">getCityWithName</span>
+                  <span class="parameters">(BANGALORE)</span>
+                  <em>
+(This test case is to validate get city With name positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithName(MUMBAI)">
+                  </a> <!-- getCityWithName(MUMBAI) -->
+                  <span class="method-name">getCityWithName</span>
+                  <span class="parameters">(MUMBAI)</span>
+                  <em>
+(This test case is to validate get city With name positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCityWithName(DELHI)">
+                  </a> <!-- getCityWithName(DELHI) -->
+                  <span class="method-name">getCityWithName</span>
+                  <span class="parameters">(DELHI)</span>
+                  <em>
+(This test case is to validate get city With name positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollectionWithCityId(NEW_YORK)">
+                  </a> <!-- getCollectionWithCityId(NEW_YORK) -->
+                  <span class="method-name">getCollectionWithCityId</span>
+                  <span class="parameters">(NEW_YORK)</span>
+                  <em>
+(This test case is to validate get collection API to positive flow. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollectionWithCityId(MUMBAI)">
+                  </a> <!-- getCollectionWithCityId(MUMBAI) -->
+                  <span class="method-name">getCollectionWithCityId</span>
+                  <span class="parameters">(MUMBAI)</span>
+                  <em>
+(This test case is to validate get collection API to positive flow. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollectionWithCityId(BANGALORE)">
+                  </a> <!-- getCollectionWithCityId(BANGALORE) -->
+                  <span class="method-name">getCollectionWithCityId</span>
+                  <span class="parameters">(BANGALORE)</span>
+                  <em>
+(This test case is to validate get collection API to positive flow. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollectionWithCityId(DELHI)">
+                  </a> <!-- getCollectionWithCityId(DELHI) -->
+                  <span class="method-name">getCollectionWithCityId</span>
+                  <span class="parameters">(DELHI)</span>
+                  <em>
+(This test case is to validate get collection API to positive flow. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollectionWithInvalidQParam(HPp, 1)">
+                  </a> <!-- getCollectionWithInvalidQParam(HPp, 1) -->
+                  <span class="method-name">getCollectionWithInvalidQParam</span>
+                  <span class="parameters">(HPp, 1)</span>
+                  <em>
+(This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollectionWithInvalidQParam(MoMM, Ba)">
+                  </a> <!-- getCollectionWithInvalidQParam(MoMM, Ba) -->
+                  <span class="method-name">getCollectionWithInvalidQParam</span>
+                  <span class="parameters">(MoMM, Ba)</span>
+                  <em>
+(This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollectionWithLocation(BANGALORE)">
+                  </a> <!-- getCollectionWithLocation(BANGALORE) -->
+                  <span class="method-name">getCollectionWithLocation</span>
+                  <span class="parameters">(BANGALORE)</span>
+                  <em>
+(This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollectionWithLocation(DELHI)">
+                  </a> <!-- getCollectionWithLocation(DELHI) -->
+                  <span class="method-name">getCollectionWithLocation</span>
+                  <span class="parameters">(DELHI)</span>
+                  <em>
+(This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollectionWithLocation(NEW_YORK)">
+                  </a> <!-- getCollectionWithLocation(NEW_YORK) -->
+                  <span class="method-name">getCollectionWithLocation</span>
+                  <span class="parameters">(NEW_YORK)</span>
+                  <em>
+(This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCollectionWithLocation(MUMBAI)">
+                  </a> <!-- getCollectionWithLocation(MUMBAI) -->
+                  <span class="method-name">getCollectionWithLocation</span>
+                  <span class="parameters">(MUMBAI)</span>
+                  <em>
+(This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Practise_Project_for_Zomato-class-passed -->
+          <div class="suite-Practise_Project_for_Zomato-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.location.LocationAPITests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLocationWithCoordinate(KORAMANGALA_BANGALORE)">
+                  </a> <!-- getLocationWithCoordinate(KORAMANGALA_BANGALORE) -->
+                  <span class="method-name">getLocationWithCoordinate</span>
+                  <span class="parameters">(KORAMANGALA_BANGALORE)</span>
+                  <em>
+(This test case is to validate get location when location coordinate is sent in request positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLocationWithCoordinate(KORAMANGALA_1ST_BLOCK_BANGALORE)">
+                  </a> <!-- getLocationWithCoordinate(KORAMANGALA_1ST_BLOCK_BANGALORE) -->
+                  <span class="method-name">getLocationWithCoordinate</span>
+                  <span class="parameters">(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                  <em>
+(This test case is to validate get location when location coordinate is sent in request positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLocationWithCoordinate(NAGARAJA_GARDEN)">
+                  </a> <!-- getLocationWithCoordinate(NAGARAJA_GARDEN) -->
+                  <span class="method-name">getLocationWithCoordinate</span>
+                  <span class="parameters">(NAGARAJA_GARDEN)</span>
+                  <em>
+(This test case is to validate get location when location coordinate is sent in request positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLocationWithCoordinate(NAGPUR)">
+                  </a> <!-- getLocationWithCoordinate(NAGPUR) -->
+                  <span class="method-name">getLocationWithCoordinate</span>
+                  <span class="parameters">(NAGPUR)</span>
+                  <em>
+(This test case is to validate get location when location coordinate is sent in request positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLocationWithName(KORAMANGALA_1ST_BLOCK_BANGALORE)">
+                  </a> <!-- getLocationWithName(KORAMANGALA_1ST_BLOCK_BANGALORE) -->
+                  <span class="method-name">getLocationWithName</span>
+                  <span class="parameters">(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                  <em>
+(This test case is to validate get location with name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLocationWithName(NAGPUR)">
+                  </a> <!-- getLocationWithName(NAGPUR) -->
+                  <span class="method-name">getLocationWithName</span>
+                  <span class="parameters">(NAGPUR)</span>
+                  <em>
+(This test case is to validate get location with name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLocationWithName(KORAMANGALA_BANGALORE)">
+                  </a> <!-- getLocationWithName(KORAMANGALA_BANGALORE) -->
+                  <span class="method-name">getLocationWithName</span>
+                  <span class="parameters">(KORAMANGALA_BANGALORE)</span>
+                  <em>
+(This test case is to validate get location with name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Practise_Project_for_Zomato-class-passed -->
+          <div class="suite-Practise_Project_for_Zomato-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.location.RestaurantInLocation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantWithInvalidLocation(KORAMANGALA_1ST_BLOCK_BANGALORE)">
+                  </a> <!-- getRestaurantWithInvalidLocation(KORAMANGALA_1ST_BLOCK_BANGALORE) -->
+                  <span class="method-name">getRestaurantWithInvalidLocation</span>
+                  <span class="parameters">(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                  <em>
+(This test case is to validate get restaurant  With invalid location scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantWithInvalidLocation(NAGPUR)">
+                  </a> <!-- getRestaurantWithInvalidLocation(NAGPUR) -->
+                  <span class="method-name">getRestaurantWithInvalidLocation</span>
+                  <span class="parameters">(NAGPUR)</span>
+                  <em>
+(This test case is to validate get restaurant  With invalid location scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantWithInvalidLocation(KORAMANGALA_BANGALORE)">
+                  </a> <!-- getRestaurantWithInvalidLocation(KORAMANGALA_BANGALORE) -->
+                  <span class="method-name">getRestaurantWithInvalidLocation</span>
+                  <span class="parameters">(KORAMANGALA_BANGALORE)</span>
+                  <em>
+(This test case is to validate get restaurant  With invalid location scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantWithInvalidLocation(NAGARAJA_GARDEN)">
+                  </a> <!-- getRestaurantWithInvalidLocation(NAGARAJA_GARDEN) -->
+                  <span class="method-name">getRestaurantWithInvalidLocation</span>
+                  <span class="parameters">(NAGARAJA_GARDEN)</span>
+                  <em>
+(This test case is to validate get restaurant  With invalid location scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantWithLocation(NAGPUR)">
+                  </a> <!-- getRestaurantWithLocation(NAGPUR) -->
+                  <span class="method-name">getRestaurantWithLocation</span>
+                  <span class="parameters">(NAGPUR)</span>
+                  <em>
+(This test case is to validate get restaurant  With location positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantWithLocation(KORAMANGALA_1ST_BLOCK_BANGALORE)">
+                  </a> <!-- getRestaurantWithLocation(KORAMANGALA_1ST_BLOCK_BANGALORE) -->
+                  <span class="method-name">getRestaurantWithLocation</span>
+                  <span class="parameters">(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                  <em>
+(This test case is to validate get restaurant  With location positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantWithLocation(KORAMANGALA_BANGALORE)">
+                  </a> <!-- getRestaurantWithLocation(KORAMANGALA_BANGALORE) -->
+                  <span class="method-name">getRestaurantWithLocation</span>
+                  <span class="parameters">(KORAMANGALA_BANGALORE)</span>
+                  <em>
+(This test case is to validate get restaurant  With location positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantWithLocation(NAGARAJA_GARDEN)">
+                  </a> <!-- getRestaurantWithLocation(NAGARAJA_GARDEN) -->
+                  <span class="method-name">getRestaurantWithLocation</span>
+                  <span class="parameters">(NAGARAJA_GARDEN)</span>
+                  <em>
+(This test case is to validate get restaurant  With location positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantWithMissingParam(NAGARAJA_GARDEN)">
+                  </a> <!-- getRestaurantWithMissingParam(NAGARAJA_GARDEN) -->
+                  <span class="method-name">getRestaurantWithMissingParam</span>
+                  <span class="parameters">(NAGARAJA_GARDEN)</span>
+                  <em>
+(This test case is to validate get restaurant  With location positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantWithMissingParam(KORAMANGALA_1ST_BLOCK_BANGALORE)">
+                  </a> <!-- getRestaurantWithMissingParam(KORAMANGALA_1ST_BLOCK_BANGALORE) -->
+                  <span class="method-name">getRestaurantWithMissingParam</span>
+                  <span class="parameters">(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                  <em>
+(This test case is to validate get restaurant  With location positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantWithMissingParam(KORAMANGALA_BANGALORE)">
+                  </a> <!-- getRestaurantWithMissingParam(KORAMANGALA_BANGALORE) -->
+                  <span class="method-name">getRestaurantWithMissingParam</span>
+                  <span class="parameters">(KORAMANGALA_BANGALORE)</span>
+                  <em>
+(This test case is to validate get restaurant  With location positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantWithMissingParam(NAGPUR)">
+                  </a> <!-- getRestaurantWithMissingParam(NAGPUR) -->
+                  <span class="method-name">getRestaurantWithMissingParam</span>
+                  <span class="parameters">(NAGPUR)</span>
+                  <em>
+(This test case is to validate get restaurant  With location positive scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Practise_Project_for_Zomato-class-passed -->
+          <div class="suite-Practise_Project_for_Zomato-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.restaurant.RestaurantApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantById(NAGARAJA_GARDEN)">
+                  </a> <!-- getRestaurantById(NAGARAJA_GARDEN) -->
+                  <span class="method-name">getRestaurantById</span>
+                  <span class="parameters">(NAGARAJA_GARDEN)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantById(NAGPUR)">
+                  </a> <!-- getRestaurantById(NAGPUR) -->
+                  <span class="method-name">getRestaurantById</span>
+                  <span class="parameters">(NAGPUR)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantById(KORAMANGALA_1ST_BLOCK_BANGALORE)">
+                  </a> <!-- getRestaurantById(KORAMANGALA_1ST_BLOCK_BANGALORE) -->
+                  <span class="method-name">getRestaurantById</span>
+                  <span class="parameters">(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantById(KORAMANGALA_BANGALORE)">
+                  </a> <!-- getRestaurantById(KORAMANGALA_BANGALORE) -->
+                  <span class="method-name">getRestaurantById</span>
+                  <span class="parameters">(KORAMANGALA_BANGALORE)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRestaurantReview">
+                  </a> <!-- getRestaurantReview -->
+                  <span class="method-name">getRestaurantReview</span>
+                  <em>
+(This test case is to validate Positive cases for Review API)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Practise_Project_for_Zomato-class-passed -->
+          <div class="suite-Practise_Project_for_Zomato-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.restaurant.SearchApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByCoordinate">
+                  </a> <!-- searchByCoordinate -->
+                  <span class="method-name">searchByCoordinate</span>
+                  <em>
+(This test case is to validate Positive cases for Review API)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByLocation(KORAMANGALA_BANGALORE)">
+                  </a> <!-- searchByLocation(KORAMANGALA_BANGALORE) -->
+                  <span class="method-name">searchByLocation</span>
+                  <span class="parameters">(KORAMANGALA_BANGALORE)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByLocation(NAGPUR)">
+                  </a> <!-- searchByLocation(NAGPUR) -->
+                  <span class="method-name">searchByLocation</span>
+                  <span class="parameters">(NAGPUR)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByLocation(NAGARAJA_GARDEN)">
+                  </a> <!-- searchByLocation(NAGARAJA_GARDEN) -->
+                  <span class="method-name">searchByLocation</span>
+                  <span class="parameters">(NAGARAJA_GARDEN)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByLocation(KORAMANGALA_1ST_BLOCK_BANGALORE)">
+                  </a> <!-- searchByLocation(KORAMANGALA_1ST_BLOCK_BANGALORE) -->
+                  <span class="method-name">searchByLocation</span>
+                  <span class="parameters">(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Practise_Project_for_Zomato-class-passed -->
+        </div> <!-- panel Practise_Project_for_Zomato -->
+        <div panel-name="test-xml-Practise_Project_for_Zomato" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/kamalkant/untitled/src/main/resources/runners/IntegrationRunner.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Practise Project for Zomato&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Free CRM App Test Cases&quot; parallel=&quot;methods&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.restaurant.RestaurantApiTest&quot;/&gt;
+      &lt;class name=&quot;tests.restaurant.SearchApiTest&quot;/&gt;
+      &lt;class name=&quot;tests.location.RestaurantInLocation&quot;/&gt;
+      &lt;class name=&quot;tests.location.LocationAPITests&quot;/&gt;
+      &lt;class name=&quot;tests.commonAPI.CommonAPITests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Free CRM App Test Cases --&gt;
+&lt;/suite&gt; &lt;!-- Practise Project for Zomato --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Practise_Project_for_Zomato" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Practise Project for Zomato</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Free CRM App Test Cases (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Practise_Project_for_Zomato" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Practise Project for Zomato</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Practise_Project_for_Zomato" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Practise Project for Zomato</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Practise_Project_for_Zomato');
+function tableData_Practise_Project_for_Zomato() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(85);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getRestaurantReview')
+data.setCell(0, 2, 'tests.restaurant.RestaurantApiTest')
+data.setCell(0, 3, 13244);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getRestaurantById')
+data.setCell(1, 2, 'tests.restaurant.RestaurantApiTest')
+data.setCell(1, 3, 13095);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getRestaurantById')
+data.setCell(2, 2, 'tests.restaurant.RestaurantApiTest')
+data.setCell(2, 3, 9899);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getRestaurantById')
+data.setCell(3, 2, 'tests.restaurant.RestaurantApiTest')
+data.setCell(3, 3, 9093);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getRestaurantById')
+data.setCell(4, 2, 'tests.restaurant.RestaurantApiTest')
+data.setCell(4, 3, 8943);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'searchByCoordinate')
+data.setCell(5, 2, 'tests.restaurant.SearchApiTest')
+data.setCell(5, 3, 4322);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'searchByInvalidLocation')
+data.setCell(6, 2, 'tests.restaurant.SearchApiTest')
+data.setCell(6, 3, 3621);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getRestaurantReviewNegativeCases')
+data.setCell(7, 2, 'tests.restaurant.RestaurantApiTest')
+data.setCell(7, 3, 2790);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'searchByLocation')
+data.setCell(8, 2, 'tests.restaurant.SearchApiTest')
+data.setCell(8, 3, 1374);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'searchByLocation')
+data.setCell(9, 2, 'tests.restaurant.SearchApiTest')
+data.setCell(9, 3, 1363);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'getRestaurantWithLocation')
+data.setCell(10, 2, 'tests.location.RestaurantInLocation')
+data.setCell(10, 3, 1333);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getRestaurantReviewNegativeCases')
+data.setCell(11, 2, 'tests.restaurant.RestaurantApiTest')
+data.setCell(11, 3, 1299);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getRestaurantWithLocation')
+data.setCell(12, 2, 'tests.location.RestaurantInLocation')
+data.setCell(12, 3, 1280);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'searchByLocation')
+data.setCell(13, 2, 'tests.restaurant.SearchApiTest')
+data.setCell(13, 3, 1246);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'searchByLocation')
+data.setCell(14, 2, 'tests.restaurant.SearchApiTest')
+data.setCell(14, 3, 1210);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'getCityWithIdAndName')
+data.setCell(15, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(15, 3, 1177);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'getLocationWithCoordinate')
+data.setCell(16, 2, 'tests.location.LocationAPITests')
+data.setCell(16, 3, 1143);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'getRestaurantReviewNegativeCases')
+data.setCell(17, 2, 'tests.restaurant.RestaurantApiTest')
+data.setCell(17, 3, 1134);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'getCityWithDiffCount')
+data.setCell(18, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(18, 3, 1134);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'getLocationWithCoordinate')
+data.setCell(19, 2, 'tests.location.LocationAPITests')
+data.setCell(19, 3, 1113);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'getRestaurantWithLocation')
+data.setCell(20, 2, 'tests.location.RestaurantInLocation')
+data.setCell(20, 3, 1099);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'getCategoriesTest')
+data.setCell(21, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(21, 3, 1098);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'getLocationWithName')
+data.setCell(22, 2, 'tests.location.LocationAPITests')
+data.setCell(22, 3, 1095);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'getCityWithLocation')
+data.setCell(23, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(23, 3, 1086);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'getRestaurantWithLocation')
+data.setCell(24, 2, 'tests.location.RestaurantInLocation')
+data.setCell(24, 3, 1081);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'getLocationMissingParam')
+data.setCell(25, 2, 'tests.location.LocationAPITests')
+data.setCell(25, 3, 1078);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'getCollectionWithCityId')
+data.setCell(26, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(26, 3, 1068);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'getCityWithDiffParam')
+data.setCell(27, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(27, 3, 1062);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'getCityWithDiffCount')
+data.setCell(28, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(28, 3, 1047);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'getRestaurantWithMissingParam')
+data.setCell(29, 2, 'tests.location.RestaurantInLocation')
+data.setCell(29, 3, 1036);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'getLocationWithName')
+data.setCell(30, 2, 'tests.location.LocationAPITests')
+data.setCell(30, 3, 1032);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'getLocationWithCoordinate')
+data.setCell(31, 2, 'tests.location.LocationAPITests')
+data.setCell(31, 3, 1014);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'getCityWithName')
+data.setCell(32, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(32, 3, 996);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'getCityWithDiffParam')
+data.setCell(33, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(33, 3, 984);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'getCollectionWithCityId')
+data.setCell(34, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(34, 3, 977);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'getCityWithIdAndName')
+data.setCell(35, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(35, 3, 976);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'getLocationWithName')
+data.setCell(36, 2, 'tests.location.LocationAPITests')
+data.setCell(36, 3, 962);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'getRestaurantWithInvalidLocation')
+data.setCell(37, 2, 'tests.location.RestaurantInLocation')
+data.setCell(37, 3, 959);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'getCollectionWithInvalidQParam')
+data.setCell(38, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(38, 3, 957);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'getCityWithLocation')
+data.setCell(39, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(39, 3, 955);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'getLocationWithName')
+data.setCell(40, 2, 'tests.location.LocationAPITests')
+data.setCell(40, 3, 953);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'getCityWithIdOnly')
+data.setCell(41, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(41, 3, 952);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'getRestaurantWithMissingParam')
+data.setCell(42, 2, 'tests.location.RestaurantInLocation')
+data.setCell(42, 3, 943);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'getCityWithIdOnly')
+data.setCell(43, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(43, 3, 939);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'getCityWithDiffParam')
+data.setCell(44, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(44, 3, 939);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'getRestaurantWithInvalidLocation')
+data.setCell(45, 2, 'tests.location.RestaurantInLocation')
+data.setCell(45, 3, 937);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'getCitiesWithInvalidLocation')
+data.setCell(46, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(46, 3, 937);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'getCollectionWithLocation')
+data.setCell(47, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(47, 3, 920);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'getLocationMissingParam')
+data.setCell(48, 2, 'tests.location.LocationAPITests')
+data.setCell(48, 3, 915);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'getCityWithIdAndName')
+data.setCell(49, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(49, 3, 909);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'getCityWithLocation')
+data.setCell(50, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(50, 3, 908);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'getRestaurantWithMissingParam')
+data.setCell(51, 2, 'tests.location.RestaurantInLocation')
+data.setCell(51, 3, 905);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'getLocationWithCoordinate')
+data.setCell(52, 2, 'tests.location.LocationAPITests')
+data.setCell(52, 3, 900);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'getCityWithInvalidQParam')
+data.setCell(53, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(53, 3, 890);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'getCityWithLocation')
+data.setCell(54, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(54, 3, 889);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'getCollectionWithLocation')
+data.setCell(55, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(55, 3, 886);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'getCollectionWithCityId')
+data.setCell(56, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(56, 3, 881);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'getCityWithInvalidIdNameCombination')
+data.setCell(57, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(57, 3, 875);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'getCityWithDiffParam')
+data.setCell(58, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(58, 3, 869);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'getRestaurantWithInvalidLocation')
+data.setCell(59, 2, 'tests.location.RestaurantInLocation')
+data.setCell(59, 3, 866);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'getCityWithDiffParam')
+data.setCell(60, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(60, 3, 856);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'getCityWithDiffParam')
+data.setCell(61, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(61, 3, 855);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'getCityWithName')
+data.setCell(62, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(62, 3, 847);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'getCollectionWithCityId')
+data.setCell(63, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(63, 3, 847);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'getCityWithDiffParam')
+data.setCell(64, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(64, 3, 839);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'getLocationMissingParam')
+data.setCell(65, 2, 'tests.location.LocationAPITests')
+data.setCell(65, 3, 835);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'getCollectionWithInvalidLocation')
+data.setCell(66, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(66, 3, 833);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'getCityWithDiffCount')
+data.setCell(67, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(67, 3, 823);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'getCityWithName')
+data.setCell(68, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(68, 3, 823);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'getRestaurantWithMissingParam')
+data.setCell(69, 2, 'tests.location.RestaurantInLocation')
+data.setCell(69, 3, 819);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'getCityWithIdOnly')
+data.setCell(70, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(70, 3, 817);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'getRestaurantWithInvalidLocation')
+data.setCell(71, 2, 'tests.location.RestaurantInLocation')
+data.setCell(71, 3, 814);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'getCityWithDiffParam')
+data.setCell(72, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(72, 3, 813);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'getCollectionWithInvalidCityId')
+data.setCell(73, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(73, 3, 808);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'getCityWithName')
+data.setCell(74, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(74, 3, 803);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'getCityWithDiffParam')
+data.setCell(75, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(75, 3, 795);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'getCityWithDiffParam')
+data.setCell(76, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(76, 3, 786);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'getCityWithInvalidQParam')
+data.setCell(77, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(77, 3, 784);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'getCollectionWithLocation')
+data.setCell(78, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(78, 3, 780);
+data.setCell(79, 0, 79)
+data.setCell(79, 1, 'getCityWithIdAndName')
+data.setCell(79, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(79, 3, 746);
+data.setCell(80, 0, 80)
+data.setCell(80, 1, 'getCityWithDiffParam')
+data.setCell(80, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(80, 3, 745);
+data.setCell(81, 0, 81)
+data.setCell(81, 1, 'getCollectionWithInvalidQParam')
+data.setCell(81, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(81, 3, 732);
+data.setCell(82, 0, 82)
+data.setCell(82, 1, 'getCityWithIdOnly')
+data.setCell(82, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(82, 3, 724);
+data.setCell(83, 0, 83)
+data.setCell(83, 1, 'getCollectionWithLocation')
+data.setCell(83, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(83, 3, 723);
+data.setCell(84, 0, 84)
+data.setCell(84, 1, 'getCityWithDiffParam')
+data.setCell(84, 2, 'tests.commonAPI.CommonAPITests')
+data.setCell(84, 3, 695);
+window.suiteTableData['Practise_Project_for_Zomato']= { tableData: data, tableDiv: 'times-div-Practise_Project_for_Zomato'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Practise_Project_for_Zomato">
+              </div> <!-- times-div-Practise_Project_for_Zomato -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Practise_Project_for_Zomato" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Practise Project for Zomato</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Practise_Project_for_Zomato" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Practise_Project_for_Zomato" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.RestaurantApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantReview</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getRestaurantReviewNegativeCases(res_id, abc)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.SearchApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchByInvalidLocation</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.RestaurantApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantById(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.SearchApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchByCoordinate</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.RestaurantApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getRestaurantReviewNegativeCases(count, 10)</span>
+                <span class="method-start">2793 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.SearchApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchByLocation(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                <span class="method-start">3622 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.RestaurantApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getRestaurantReviewNegativeCases(start, 10)</span>
+                <span class="method-start">4092 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.RestaurantInLocation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantWithInvalidLocation(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                <span class="method-start">4323 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.SearchApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchByLocation(NAGARAJA_GARDEN)</span>
+                <span class="method-start">4868 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.RestaurantInLocation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantWithInvalidLocation(NAGARAJA_GARDEN)</span>
+                <span class="method-start">5137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantWithLocation(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                <span class="method-start">5227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantWithInvalidLocation(KORAMANGALA_BANGALORE)</span>
+                <span class="method-start">6003 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.SearchApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchByLocation(KORAMANGALA_BANGALORE)</span>
+                <span class="method-start">6231 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.RestaurantInLocation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantWithLocation(NAGARAJA_GARDEN)</span>
+                <span class="method-start">6560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantWithInvalidLocation(NAGPUR)</span>
+                <span class="method-start">6941 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.SearchApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchByLocation(NAGPUR)</span>
+                <span class="method-start">7605 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.RestaurantInLocation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantWithLocation(KORAMANGALA_BANGALORE)</span>
+                <span class="method-start">7641 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantWithMissingParam(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                <span class="method-start">7900 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.LocationAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getLocationMissingParam</span>
+                <span class="method-start">8816 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.RestaurantInLocation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantWithLocation(NAGPUR)</span>
+                <span class="method-start">8921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantWithMissingParam(NAGARAJA_GARDEN)</span>
+                <span class="method-start">8936 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.LocationAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getLocationMissingParam(ypTW, Ba)</span>
+                <span class="method-start">9652 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.RestaurantInLocation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantWithMissingParam(KORAMANGALA_BANGALORE)</span>
+                <span class="method-start">9842 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.LocationAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getLocationWithCoordinate(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                <span class="method-start">10021 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.RestaurantInLocation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantWithMissingParam(NAGPUR)</span>
+                <span class="method-start">10661 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.LocationAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getLocationMissingParam(Cip, 1)</span>
+                <span class="method-start">10731 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getLocationWithCoordinate(NAGARAJA_GARDEN)</span>
+                <span class="method-start">11165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getLocationWithName(KORAMANGALA_1ST_BLOCK_BANGALORE)</span>
+                <span class="method-start">11605 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.commonAPI.CommonAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getCategoriesTest</span>
+                <span class="method-start">11646 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.LocationAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getLocationWithCoordinate(KORAMANGALA_BANGALORE)</span>
+                <span class="method-start">12065 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getLocationWithName(NAGARAJA_GARDEN)</span>
+                <span class="method-start">12567 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.commonAPI.CommonAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getCitiesWithInvalidLocation</span>
+                <span class="method-start">12745 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.LocationAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getLocationWithCoordinate(NAGPUR)</span>
+                <span class="method-start">13079 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.RestaurantApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantById(NAGARAJA_GARDEN)</span>
+                <span class="method-start">13096 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.commonAPI.CommonAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getCityWithDiffCount(q, Ba, 0, 0)</span>
+                <span class="method-start">13244 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.LocationAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getLocationWithName(KORAMANGALA_BANGALORE)</span>
+                <span class="method-start">13520 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.commonAPI.CommonAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getCityWithDiffParam(q, a, 0)</span>
+                <span class="method-start">13683 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithIdAndName(BANGALORE)</span>
+                <span class="method-start">14192 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getCityWithDiffCount(q, Ba, 11, 11)</span>
+                <span class="method-start">14378 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getCityWithDiffParam(q, 1,1,1,1,1, 1)</span>
+                <span class="method-start">14538 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.location.LocationAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getLocationWithName(NAGPUR)</span>
+                <span class="method-start">14615 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.commonAPI.CommonAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getCityWithIdAndName(DELHI)</span>
+                <span class="method-start">15101 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithDiffCount(q, Ba, 2, 2)</span>
+                <span class="method-start">15426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithDiffParam(q, haryana, 0)</span>
+                <span class="method-start">15523 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithIdOnly(BANGALORE)</span>
+                <span class="method-start">15647 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getCityWithInvalidIdNameCombination</span>
+                <span class="method-start">16250 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithIdAndName(MUMBAI)</span>
+                <span class="method-start">16278 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithDiffParam(q, null, 0)</span>
+                <span class="method-start">16319 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithIdOnly(DELHI)</span>
+                <span class="method-start">16464 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithIdAndName(NEW_YORK)</span>
+                <span class="method-start">17024 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithDiffParam(q, null, 0)</span>
+                <span class="method-start">17105 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getCityWithInvalidQParam(RCiZ, Ba)</span>
+                <span class="method-start">17126 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithIdOnly(MUMBAI)</span>
+                <span class="method-start">17188 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithDiffParam(q,  H  I  S  A  R, 1)</span>
+                <span class="method-start">17974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithLocation(BANGALORE)</span>
+                <span class="method-start">18000 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getCityWithInvalidQParam(gHs, 1)</span>
+                <span class="method-start">18017 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithIdOnly(NEW_YORK)</span>
+                <span class="method-start">18127 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithName(BANGALORE)</span>
+                <span class="method-start">18801 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithDiffParam(city_ids, a, 0)</span>
+                <span class="method-start">18814 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithLocation(DELHI)</span>
+                <span class="method-start">18890 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCollectionWithCityId(BANGALORE)</span>
+                <span class="method-start">19080 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithDiffParam(city_ids, -1, 0)</span>
+                <span class="method-start">19559 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithName(DELHI)</span>
+                <span class="method-start">19604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithLocation(MUMBAI)</span>
+                <span class="method-start">19845 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCollectionWithCityId(DELHI)</span>
+                <span class="method-start">19928 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithName(MUMBAI)</span>
+                <span class="method-start">20601 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithDiffParam(city_ids, 1.0, 1)</span>
+                <span class="method-start">20622 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithLocation(NEW_YORK)</span>
+                <span class="method-start">20931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCollectionWithCityId(MUMBAI)</span>
+                <span class="method-start">20997 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithName(NEW_YORK)</span>
+                <span class="method-start">21425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithDiffParam(city_ids, 0, 0)</span>
+                <span class="method-start">21479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getCollectionWithInvalidCityId</span>
+                <span class="method-start">21839 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCollectionWithCityId(NEW_YORK)</span>
+                <span class="method-start">21974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCityWithDiffParam(city_ids, 1234543212, 0)</span>
+                <span class="method-start">22174 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getCollectionWithInvalidLocation</span>
+                <span class="method-start">22273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCollectionWithInvalidQParam(MoMM, Ba)</span>
+                <span class="method-start">22648 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCollectionWithLocation(BANGALORE)</span>
+                <span class="method-start">22856 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.RestaurantApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantById(KORAMANGALA_BANGALORE)</span>
+                <span class="method-start">22995 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.commonAPI.CommonAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getCityWithDiffParam(q, oAYMqMpDA, 0)</span>
+                <span class="method-start">23114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCollectionWithInvalidQParam(HPp, 1)</span>
+                <span class="method-start">23380 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCollectionWithLocation(DELHI)</span>
+                <span class="method-start">23579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCollectionWithLocation(MUMBAI)</span>
+                <span class="method-start">24465 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCollectionWithLocation(NEW_YORK)</span>
+                <span class="method-start">25385 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.restaurant.RestaurantApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getRestaurantById(NAGPUR)</span>
+                <span class="method-start">31938 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

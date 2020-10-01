@@ -1,0 +1,433 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "popularity": {
+      "$id": "#/properties/popularity",
+      "type": "string"
+    },
+    "nightlife_index": {
+      "$id": "#/properties/nightlife_index",
+      "type": "string"
+    },
+    "nearby_res": {
+      "$id": "#/properties/nearby_res",
+      "type": "array",
+      "items": {
+        "$id": "#/properties/nearby_res/items",
+        "type": "string"
+      }
+    },
+    "top_cuisines": {
+      "$id": "#/properties/top_cuisines",
+      "type": "array",
+      "items": {
+        "$id": "#/properties/top_cuisines/items",
+        "type": "string"
+      }
+    },
+    "popularity_res": {
+      "$id": "#/properties/popularity_res",
+      "type": "string"
+    },
+    "nightlife_res": {
+      "$id": "#/properties/nightlife_res",
+      "type": "string"
+    },
+    "subzone": {
+      "$id": "#/properties/subzone",
+      "type": "string"
+    },
+    "subzone_id": {
+      "$id": "#/properties/subzone_id",
+      "type": "integer"
+    },
+    "city": {
+      "$id": "#/properties/city",
+      "type": "string"
+    },
+    "location": {
+      "$id": "#/properties/location",
+      "type": "object",
+      "required": [],
+      "properties": {
+        "entity_type": {
+          "$id": "#/properties/location/properties/entity_type",
+          "type": "string"
+        },
+        "entity_id": {
+          "$id": "#/properties/location/properties/entity_id",
+          "type": "integer"
+        },
+        "title": {
+          "$id": "#/properties/location/properties/title",
+          "type": "string"
+        },
+        "latitude": {
+          "$id": "#/properties/location/properties/latitude",
+          "type": "number"
+        },
+        "longitude": {
+          "$id": "#/properties/location/properties/longitude",
+          "type": "number"
+        },
+        "city_id": {
+          "$id": "#/properties/location/properties/city_id",
+          "type": "integer"
+        },
+        "city_name": {
+          "$id": "#/properties/location/properties/city_name",
+          "type": "string"
+        },
+        "country_id": {
+          "$id": "#/properties/location/properties/country_id",
+          "type": "integer"
+        },
+        "country_name": {
+          "$id": "#/properties/location/properties/country_name",
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "num_restaurant": {
+      "$id": "#/properties/num_restaurant",
+      "type": "integer"
+    },
+    "best_rated_restaurant": {
+      "$id": "#/properties/best_rated_restaurant",
+      "type": "array",
+      "items": {
+        "$id": "#/properties/best_rated_restaurant/items",
+        "type": "object",
+        "required": [],
+        "properties": {
+          "restaurant": {
+            "$id": "#/properties/best_rated_restaurant/items/properties/restaurant",
+            "type": "object",
+            "required": [],
+            "properties": {
+              "R": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/R",
+                "type": "object",
+                "required": [],
+                "properties": {
+                  "has_menu_status": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/R/properties/has_menu_status",
+                    "type": "object",
+                    "required": [],
+                    "properties": {
+                      "delivery": {
+                        "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/R/properties/has_menu_status/properties/delivery",
+                        "type": "integer"
+                      },
+                      "takeaway": {
+                        "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/R/properties/has_menu_status/properties/takeaway",
+                        "type": "integer"
+                      }
+                    },
+                    "additionalProperties": true
+                  },
+                  "res_id": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/R/properties/res_id",
+                    "type": "integer"
+                  },
+                  "is_grocery_store": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/R/properties/is_grocery_store",
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": true
+              },
+              "apikey": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/apikey",
+                "type": "string"
+              },
+              "id": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/id",
+                "type": "string"
+              },
+              "name": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/name",
+                "type": "string"
+              },
+              "url": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/url",
+                "type": "string"
+              },
+              "location": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/location",
+                "type": "object",
+                "required": [],
+                "properties": {
+                  "address": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/location/properties/address",
+                    "type": "string"
+                  },
+                  "locality": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/location/properties/locality",
+                    "type": "string"
+                  },
+                  "city": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/location/properties/city",
+                    "type": "string"
+                  },
+                  "city_id": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/location/properties/city_id",
+                    "type": "integer"
+                  },
+                  "latitude": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/location/properties/latitude",
+                    "type": "string"
+                  },
+                  "longitude": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/location/properties/longitude",
+                    "type": "string"
+                  },
+                  "zipcode": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/location/properties/zipcode",
+                    "type": "string"
+                  },
+                  "country_id": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/location/properties/country_id",
+                    "type": "integer"
+                  },
+                  "locality_verbose": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/location/properties/locality_verbose",
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": true
+              },
+              "switch_to_order_menu": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/switch_to_order_menu",
+                "type": "integer"
+              },
+              "cuisines": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/cuisines",
+                "type": "string"
+              },
+              "timings": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/timings",
+                "type": "string"
+              },
+              "average_cost_for_two": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/average_cost_for_two",
+                "type": "integer"
+              },
+              "price_range": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/price_range",
+                "type": "integer"
+              },
+              "currency": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/currency",
+                "type": "string"
+              },
+              "highlights": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/highlights",
+                "type": "array",
+                "items": {
+                  "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/highlights/items",
+                  "type": "string"
+                }
+              },
+              "offers": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/offers",
+                "type": "array"
+              },
+              "opentable_support": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/opentable_support",
+                "type": "integer"
+              },
+              "is_zomato_book_res": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/is_zomato_book_res",
+                "type": "integer"
+              },
+              "mezzo_provider": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/mezzo_provider",
+                "type": "string"
+              },
+              "is_book_form_web_view": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/is_book_form_web_view",
+                "type": "integer"
+              },
+              "book_form_web_view_url": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/book_form_web_view_url",
+                "type": "string"
+              },
+              "book_again_url": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/book_again_url",
+                "type": "string"
+              },
+              "thumb": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/thumb",
+                "type": "string"
+              },
+              "user_rating": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/user_rating",
+                "type": "object",
+                "required": [],
+                "properties": {
+                  "aggregate_rating": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/user_rating/properties/aggregate_rating",
+                    "type": "string"
+                  },
+                  "rating_text": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/user_rating/properties/rating_text",
+                    "type": "string"
+                  },
+                  "rating_color": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/user_rating/properties/rating_color",
+                    "type": "string"
+                  },
+                  "rating_obj": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/user_rating/properties/rating_obj",
+                    "type": "object",
+                    "required": [],
+                    "properties": {
+                      "title": {
+                        "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/user_rating/properties/rating_obj/properties/title",
+                        "type": "object",
+                        "required": [],
+                        "properties": {
+                          "text": {
+                            "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/user_rating/properties/rating_obj/properties/title/properties/text",
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      "bg_color": {
+                        "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/user_rating/properties/rating_obj/properties/bg_color",
+                        "type": "object",
+                        "required": [],
+                        "properties": {
+                          "type": {
+                            "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/user_rating/properties/rating_obj/properties/bg_color/properties/type",
+                            "type": "string"
+                          },
+                          "tint": {
+                            "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/user_rating/properties/rating_obj/properties/bg_color/properties/tint",
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": true
+                      }
+                    },
+                    "additionalProperties": true
+                  },
+                  "votes": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/user_rating/properties/votes",
+                    "type": "integer"
+                  }
+                },
+                "additionalProperties": true
+              },
+              "all_reviews_count": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/all_reviews_count",
+                "type": "integer"
+              },
+              "photos_url": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/photos_url",
+                "type": "string"
+              },
+              "photo_count": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/photo_count",
+                "type": "integer"
+              },
+              "menu_url": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/menu_url",
+                "type": "string"
+              },
+              "featured_image": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/featured_image",
+                "type": "string"
+              },
+              "has_online_delivery": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/has_online_delivery",
+                "type": "integer"
+              },
+              "is_delivering_now": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/is_delivering_now",
+                "type": "integer"
+              },
+              "store_type": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/store_type",
+                "type": "string"
+              },
+              "include_bogo_offers": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/include_bogo_offers",
+                "type": "boolean"
+              },
+              "deeplink": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/deeplink",
+                "type": "string"
+              },
+              "order_url": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/order_url",
+                "type": "string"
+              },
+              "order_deeplink": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/order_deeplink",
+                "type": "string"
+              },
+              "is_table_reservation_supported": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/is_table_reservation_supported",
+                "type": "integer"
+              },
+              "has_table_booking": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/has_table_booking",
+                "type": "integer"
+              },
+              "events_url": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/events_url",
+                "type": "string"
+              },
+              "phone_numbers": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/phone_numbers",
+                "type": "string"
+              },
+              "all_reviews": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/all_reviews",
+                "type": "object",
+                "required": [],
+                "properties": {
+                  "reviews": {
+                    "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/all_reviews/properties/reviews",
+                    "type": "array",
+                    "items": {
+                      "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/all_reviews/properties/reviews/items",
+                      "type": "object",
+                      "required": [],
+                      "properties": {
+                        "review": {
+                          "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/all_reviews/properties/reviews/items/properties/review",
+                          "type": "array"
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  }
+                },
+                "additionalProperties": true
+              },
+              "establishment": {
+                "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/establishment",
+                "type": "array",
+                "items": {
+                  "$id": "#/properties/best_rated_restaurant/items/properties/restaurant/properties/establishment/items",
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

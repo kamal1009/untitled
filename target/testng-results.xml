@@ -1,0 +1,1638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="18" ignored="0" total="85" passed="67">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Practise Project for Zomato" duration-ms="41052" started-at="2020-10-01T06:03:00Z" finished-at="2020-10-01T06:03:41Z">
+    <groups>
+    </groups>
+    <test name="Free CRM App Test Cases" duration-ms="41052" started-at="2020-10-01T06:03:00Z" finished-at="2020-10-01T06:03:41Z">
+      <class name="tests.restaurant.SearchApiTest">
+        <test-method status="PASS" signature="searchByCoordinate()[pri:0, instance:tests.restaurant.SearchApiTest@47c62251]" name="searchByCoordinate" duration-ms="4322" started-at="2020-10-01T06:03:00Z" description="This test case is to validate Positive cases for Review API" finished-at="2020-10-01T06:03:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByCoordinate -->
+        <test-method status="FAIL" signature="searchByInvalidLocation()[pri:0, instance:tests.restaurant.SearchApiTest@47c62251]" name="searchByInvalidLocation" duration-ms="3621" started-at="2020-10-01T06:03:00Z" description="This test case is to validate search api where invalid entity id is passed in request" finished-at="2020-10-01T06:03:03Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at apiCalls.Location.searchRestaurant(Location.java:56)
+at tests.restaurant.SearchApiTest.searchByInvalidLocation(SearchApiTest.java:41)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByInvalidLocation -->
+        <test-method status="PASS" signature="searchByLocation(enums.Locations)[pri:0, instance:tests.restaurant.SearchApiTest@47c62251]" name="searchByLocation" duration-ms="1246" started-at="2020-10-01T06:03:03Z" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_1ST_BLOCK_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByLocation -->
+        <test-method status="PASS" signature="searchByLocation(enums.Locations)[pri:0, instance:tests.restaurant.SearchApiTest@47c62251]" name="searchByLocation" duration-ms="1363" started-at="2020-10-01T06:03:05Z" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGARAJA_GARDEN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByLocation -->
+        <test-method status="PASS" signature="searchByLocation(enums.Locations)[pri:0, instance:tests.restaurant.SearchApiTest@47c62251]" name="searchByLocation" duration-ms="1374" started-at="2020-10-01T06:03:06Z" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByLocation -->
+        <test-method status="PASS" signature="searchByLocation(enums.Locations)[pri:0, instance:tests.restaurant.SearchApiTest@47c62251]" name="searchByLocation" duration-ms="1210" started-at="2020-10-01T06:03:07Z" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGPUR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByLocation -->
+      </class> <!-- tests.restaurant.SearchApiTest -->
+      <class name="tests.location.RestaurantInLocation">
+        <test-method status="PASS" signature="getRestaurantWithInvalidLocation(enums.Locations)[pri:0, instance:tests.location.RestaurantInLocation@3e6fa38a]" name="getRestaurantWithInvalidLocation" duration-ms="814" started-at="2020-10-01T06:03:04Z" description="This test case is to validate get restaurant  With invalid location scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_1ST_BLOCK_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantWithInvalidLocation -->
+        <test-method status="PASS" signature="getRestaurantWithInvalidLocation(enums.Locations)[pri:0, instance:tests.location.RestaurantInLocation@3e6fa38a]" name="getRestaurantWithInvalidLocation" duration-ms="866" started-at="2020-10-01T06:03:05Z" description="This test case is to validate get restaurant  With invalid location scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGARAJA_GARDEN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantWithInvalidLocation -->
+        <test-method status="PASS" signature="getRestaurantWithLocation(enums.Locations)[pri:0, instance:tests.location.RestaurantInLocation@3e6fa38a]" name="getRestaurantWithLocation" duration-ms="1333" started-at="2020-10-01T06:03:05Z" description="This test case is to validate get restaurant  With location positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_1ST_BLOCK_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantWithLocation -->
+        <test-method status="PASS" signature="getRestaurantWithInvalidLocation(enums.Locations)[pri:0, instance:tests.location.RestaurantInLocation@3e6fa38a]" name="getRestaurantWithInvalidLocation" duration-ms="937" started-at="2020-10-01T06:03:06Z" description="This test case is to validate get restaurant  With invalid location scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantWithInvalidLocation -->
+        <test-method status="PASS" signature="getRestaurantWithLocation(enums.Locations)[pri:0, instance:tests.location.RestaurantInLocation@3e6fa38a]" name="getRestaurantWithLocation" duration-ms="1081" started-at="2020-10-01T06:03:06Z" description="This test case is to validate get restaurant  With location positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGARAJA_GARDEN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantWithLocation -->
+        <test-method status="PASS" signature="getRestaurantWithInvalidLocation(enums.Locations)[pri:0, instance:tests.location.RestaurantInLocation@3e6fa38a]" name="getRestaurantWithInvalidLocation" duration-ms="959" started-at="2020-10-01T06:03:07Z" description="This test case is to validate get restaurant  With invalid location scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGPUR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantWithInvalidLocation -->
+        <test-method status="PASS" signature="getRestaurantWithLocation(enums.Locations)[pri:0, instance:tests.location.RestaurantInLocation@3e6fa38a]" name="getRestaurantWithLocation" duration-ms="1280" started-at="2020-10-01T06:03:07Z" description="This test case is to validate get restaurant  With location positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantWithLocation -->
+        <test-method status="PASS" signature="getRestaurantWithMissingParam(enums.Locations)[pri:0, instance:tests.location.RestaurantInLocation@3e6fa38a]" name="getRestaurantWithMissingParam" duration-ms="1036" started-at="2020-10-01T06:03:08Z" description="This test case is to validate get restaurant  With location positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_1ST_BLOCK_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantWithMissingParam -->
+        <test-method status="PASS" signature="getRestaurantWithLocation(enums.Locations)[pri:0, instance:tests.location.RestaurantInLocation@3e6fa38a]" name="getRestaurantWithLocation" duration-ms="1099" started-at="2020-10-01T06:03:09Z" description="This test case is to validate get restaurant  With location positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGPUR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantWithLocation -->
+        <test-method status="PASS" signature="getRestaurantWithMissingParam(enums.Locations)[pri:0, instance:tests.location.RestaurantInLocation@3e6fa38a]" name="getRestaurantWithMissingParam" duration-ms="905" started-at="2020-10-01T06:03:09Z" description="This test case is to validate get restaurant  With location positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGARAJA_GARDEN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantWithMissingParam -->
+        <test-method status="PASS" signature="getRestaurantWithMissingParam(enums.Locations)[pri:0, instance:tests.location.RestaurantInLocation@3e6fa38a]" name="getRestaurantWithMissingParam" duration-ms="819" started-at="2020-10-01T06:03:09Z" description="This test case is to validate get restaurant  With location positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantWithMissingParam -->
+        <test-method status="PASS" signature="getRestaurantWithMissingParam(enums.Locations)[pri:0, instance:tests.location.RestaurantInLocation@3e6fa38a]" name="getRestaurantWithMissingParam" duration-ms="943" started-at="2020-10-01T06:03:10Z" description="This test case is to validate get restaurant  With location positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGPUR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantWithMissingParam -->
+      </class> <!-- tests.location.RestaurantInLocation -->
+      <class name="tests.restaurant.RestaurantApiTest">
+        <test-method status="FAIL" signature="getRestaurantReviewNegativeCases(java.lang.String, java.lang.Object)[pri:0, instance:tests.restaurant.RestaurantApiTest@6f7fd0e6]" name="getRestaurantReviewNegativeCases" duration-ms="2790" started-at="2020-10-01T06:03:00Z" description="This test case is to validate Positive cases for Review API" data-provider="getReviewNegative" finished-at="2020-10-01T06:03:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[res_id]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [500]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [500]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at apiCalls.Location.getRestaurantReview(Location.java:80)
+at tests.restaurant.RestaurantApiTest.getRestaurantReviewNegativeCases(RestaurantApiTest.java:69)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantReviewNegativeCases -->
+        <test-method status="PASS" signature="getRestaurantReview()[pri:0, instance:tests.restaurant.RestaurantApiTest@6f7fd0e6]" name="getRestaurantReview" duration-ms="13244" started-at="2020-10-01T06:03:00Z" description="This test case is to validate Positive cases for Review API" finished-at="2020-10-01T06:03:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantReview -->
+        <test-method status="PASS" signature="getRestaurantById(enums.Locations)[pri:0, instance:tests.restaurant.RestaurantApiTest@6f7fd0e6]" name="getRestaurantById" duration-ms="13095" started-at="2020-10-01T06:03:00Z" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_1ST_BLOCK_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantById -->
+        <test-method status="FAIL" signature="getRestaurantReviewNegativeCases(java.lang.String, java.lang.Object)[pri:0, instance:tests.restaurant.RestaurantApiTest@6f7fd0e6]" name="getRestaurantReviewNegativeCases" duration-ms="1299" started-at="2020-10-01T06:03:02Z" description="This test case is to validate Positive cases for Review API" data-provider="getReviewNegative" finished-at="2020-10-01T06:03:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[count]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at apiCalls.Location.getRestaurantReview(Location.java:80)
+at tests.restaurant.RestaurantApiTest.getRestaurantReviewNegativeCases(RestaurantApiTest.java:69)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantReviewNegativeCases -->
+        <test-method status="FAIL" signature="getRestaurantReviewNegativeCases(java.lang.String, java.lang.Object)[pri:0, instance:tests.restaurant.RestaurantApiTest@6f7fd0e6]" name="getRestaurantReviewNegativeCases" duration-ms="1134" started-at="2020-10-01T06:03:04Z" description="This test case is to validate Positive cases for Review API" data-provider="getReviewNegative" finished-at="2020-10-01T06:03:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[start]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at apiCalls.Location.getRestaurantReview(Location.java:80)
+at tests.restaurant.RestaurantApiTest.getRestaurantReviewNegativeCases(RestaurantApiTest.java:69)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantReviewNegativeCases -->
+        <test-method status="PASS" signature="getRestaurantById(enums.Locations)[pri:0, instance:tests.restaurant.RestaurantApiTest@6f7fd0e6]" name="getRestaurantById" duration-ms="9899" started-at="2020-10-01T06:03:13Z" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGARAJA_GARDEN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantById -->
+        <test-method status="PASS" signature="getRestaurantById(enums.Locations)[pri:0, instance:tests.restaurant.RestaurantApiTest@6f7fd0e6]" name="getRestaurantById" duration-ms="8943" started-at="2020-10-01T06:03:23Z" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantById -->
+        <test-method status="PASS" signature="getRestaurantById(enums.Locations)[pri:0, instance:tests.restaurant.RestaurantApiTest@6f7fd0e6]" name="getRestaurantById" duration-ms="9093" started-at="2020-10-01T06:03:32Z" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGPUR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantById -->
+      </class> <!-- tests.restaurant.RestaurantApiTest -->
+      <class name="tests.location.LocationAPITests">
+        <test-method status="FAIL" signature="getLocationMissingParam()[pri:0, instance:tests.location.LocationAPITests@66a3ffec]" name="getLocationMissingParam" duration-ms="835" started-at="2020-10-01T06:03:08Z" description="This test case is to validate get location api when query params are missing" finished-at="2020-10-01T06:03:09Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at apiCalls.Location.getLocation(Location.java:32)
+at tests.location.LocationAPITests.getLocationMissingParam(LocationAPITests.java:61)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLocationMissingParam -->
+        <test-method status="FAIL" signature="getLocationMissingParam(java.lang.String, java.lang.String)[pri:0, instance:tests.location.LocationAPITests@66a3ffec]" name="getLocationMissingParam" duration-ms="1078" started-at="2020-10-01T06:03:09Z" description="This test case is to validate get location api when invalid param are sent in request" data-provider="invalidQParam" finished-at="2020-10-01T06:03:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ypTW]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ba]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at apiCalls.Location.getLocation(Location.java:32)
+at tests.location.LocationAPITests.getLocationMissingParam(LocationAPITests.java:69)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLocationMissingParam -->
+        <test-method status="PASS" signature="getLocationWithCoordinate(enums.Locations)[pri:0, instance:tests.location.LocationAPITests@66a3ffec]" name="getLocationWithCoordinate" duration-ms="1143" started-at="2020-10-01T06:03:10Z" description="This test case is to validate get location when location coordinate is sent in request positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_1ST_BLOCK_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLocationWithCoordinate -->
+        <test-method status="FAIL" signature="getLocationMissingParam(java.lang.String, java.lang.String)[pri:0, instance:tests.location.LocationAPITests@66a3ffec]" name="getLocationMissingParam" duration-ms="915" started-at="2020-10-01T06:03:10Z" description="This test case is to validate get location api when invalid param are sent in request" data-provider="invalidQParam" finished-at="2020-10-01T06:03:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cip]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at apiCalls.Location.getLocation(Location.java:32)
+at tests.location.LocationAPITests.getLocationMissingParam(LocationAPITests.java:69)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLocationMissingParam -->
+        <test-method status="PASS" signature="getLocationWithCoordinate(enums.Locations)[pri:0, instance:tests.location.LocationAPITests@66a3ffec]" name="getLocationWithCoordinate" duration-ms="900" started-at="2020-10-01T06:03:11Z" description="This test case is to validate get location when location coordinate is sent in request positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGARAJA_GARDEN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLocationWithCoordinate -->
+        <test-method status="PASS" signature="getLocationWithName(enums.Locations)[pri:0, instance:tests.location.LocationAPITests@66a3ffec]" name="getLocationWithName" duration-ms="962" started-at="2020-10-01T06:03:11Z" description="This test case is to validate get location with name" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_1ST_BLOCK_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLocationWithName -->
+        <test-method status="PASS" signature="getLocationWithCoordinate(enums.Locations)[pri:0, instance:tests.location.LocationAPITests@66a3ffec]" name="getLocationWithCoordinate" duration-ms="1014" started-at="2020-10-01T06:03:12Z" description="This test case is to validate get location when location coordinate is sent in request positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLocationWithCoordinate -->
+        <test-method status="FAIL" signature="getLocationWithName(enums.Locations)[pri:0, instance:tests.location.LocationAPITests@66a3ffec]" name="getLocationWithName" duration-ms="953" started-at="2020-10-01T06:03:12Z" description="This test case is to validate get location with name" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGARAJA_GARDEN]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [zomato_place] but found [city]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [zomato_place] but found [city]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at tests.location.LocationAPITests.validateLocationData(LocationAPITests.java:74)
+at tests.location.LocationAPITests.getLocationWithName(LocationAPITests.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLocationWithName -->
+        <test-method status="PASS" signature="getLocationWithCoordinate(enums.Locations)[pri:0, instance:tests.location.LocationAPITests@66a3ffec]" name="getLocationWithCoordinate" duration-ms="1113" started-at="2020-10-01T06:03:13Z" description="This test case is to validate get location when location coordinate is sent in request positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGPUR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLocationWithCoordinate -->
+        <test-method status="PASS" signature="getLocationWithName(enums.Locations)[pri:0, instance:tests.location.LocationAPITests@66a3ffec]" name="getLocationWithName" duration-ms="1095" started-at="2020-10-01T06:03:13Z" description="This test case is to validate get location with name" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KORAMANGALA_BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLocationWithName -->
+        <test-method status="PASS" signature="getLocationWithName(enums.Locations)[pri:0, instance:tests.location.LocationAPITests@66a3ffec]" name="getLocationWithName" duration-ms="1032" started-at="2020-10-01T06:03:14Z" description="This test case is to validate get location with name" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NAGPUR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLocationWithName -->
+      </class> <!-- tests.location.LocationAPITests -->
+      <class name="tests.commonAPI.CommonAPITests">
+        <test-method status="PASS" signature="getCategoriesTest()[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCategoriesTest" duration-ms="1098" started-at="2020-10-01T06:03:11Z" description="This test case is to validate get Categories API to positive flow. We will validate the schema as well" finished-at="2020-10-01T06:03:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCategoriesTest -->
+        <test-method status="FAIL" signature="getCitiesWithInvalidLocation()[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCitiesWithInvalidLocation" duration-ms="937" started-at="2020-10-01T06:03:12Z" description="This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well" finished-at="2020-10-01T06:03:13Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [500]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [500]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at apiCalls.Common.getCities(Common.java:48)
+at tests.commonAPI.CommonAPITests.getCitiesWithInvalidLocation(CommonAPITests.java:174)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCitiesWithInvalidLocation -->
+        <test-method status="FAIL" signature="getCityWithDiffCount(java.lang.String, java.lang.Object, int, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffCount" duration-ms="1134" started-at="2020-10-01T06:03:13Z" description="This test case is to validate get City when count param is passed in request" data-provider="getCityCountPassed" finished-at="2020-10-01T06:03:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ba]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0] but found [10]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [0] but found [10]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at tests.commonAPI.CommonAPITests.getCityWithDiffCount(CommonAPITests.java:86)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffCount -->
+        <test-method status="PASS" signature="getCityWithDiffParam(java.lang.String, java.lang.Object, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffParam" duration-ms="855" started-at="2020-10-01T06:03:13Z" data-provider="getCityWithParam" finished-at="2020-10-01T06:03:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffParam -->
+        <test-method status="PASS" signature="getCityWithIdAndName(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithIdAndName" duration-ms="909" started-at="2020-10-01T06:03:14Z" description="This test case is validate get city name when invalid qParam is passed in request" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithIdAndName -->
+        <test-method status="FAIL" signature="getCityWithDiffCount(java.lang.String, java.lang.Object, int, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffCount" duration-ms="1047" started-at="2020-10-01T06:03:14Z" description="This test case is to validate get City when count param is passed in request" data-provider="getCityCountPassed" finished-at="2020-10-01T06:03:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ba]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [11] but found [10]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [11] but found [10]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at tests.commonAPI.CommonAPITests.getCityWithDiffCount(CommonAPITests.java:86)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffCount -->
+        <test-method status="FAIL" signature="getCityWithDiffParam(java.lang.String, java.lang.Object, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffParam" duration-ms="984" started-at="2020-10-01T06:03:14Z" data-provider="getCityWithParam" finished-at="2020-10-01T06:03:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1,1,1,1,1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [1] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [1] but found [0]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at tests.commonAPI.CommonAPITests.getCityWithDiffParam(CommonAPITests.java:77)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffParam -->
+        <test-method status="PASS" signature="getCityWithIdAndName(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithIdAndName" duration-ms="1177" started-at="2020-10-01T06:03:15Z" description="This test case is validate get city name when invalid qParam is passed in request" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DELHI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithIdAndName -->
+        <test-method status="PASS" signature="getCityWithDiffCount(java.lang.String, java.lang.Object, int, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffCount" duration-ms="823" started-at="2020-10-01T06:03:15Z" description="This test case is to validate get City when count param is passed in request" data-provider="getCityCountPassed" finished-at="2020-10-01T06:03:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ba]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffCount -->
+        <test-method status="PASS" signature="getCityWithDiffParam(java.lang.String, java.lang.Object, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffParam" duration-ms="795" started-at="2020-10-01T06:03:15Z" data-provider="getCityWithParam" finished-at="2020-10-01T06:03:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[haryana]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffParam -->
+        <test-method status="PASS" signature="getCityWithIdOnly(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithIdOnly" duration-ms="817" started-at="2020-10-01T06:03:15Z" description="This test case is to validate get city With ID positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithIdOnly -->
+        <test-method status="FAIL" signature="getCityWithInvalidIdNameCombination()[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithInvalidIdNameCombination" duration-ms="875" started-at="2020-10-01T06:03:16Z" description="This test case is to validate when invalid combination of qParam is passed in request for get cities API" finished-at="2020-10-01T06:03:17Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [0] but found [1]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at tests.commonAPI.CommonAPITests.getCityWithInvalidIdNameCombination(CommonAPITests.java:134)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithInvalidIdNameCombination -->
+        <test-method status="PASS" signature="getCityWithIdAndName(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithIdAndName" duration-ms="746" started-at="2020-10-01T06:03:16Z" description="This test case is validate get city name when invalid qParam is passed in request" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MUMBAI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithIdAndName -->
+        <test-method status="PASS" signature="getCityWithDiffParam(java.lang.String, java.lang.Object, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffParam" duration-ms="786" started-at="2020-10-01T06:03:16Z" data-provider="getCityWithParam" finished-at="2020-10-01T06:03:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffParam -->
+        <test-method status="PASS" signature="getCityWithIdOnly(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithIdOnly" duration-ms="724" started-at="2020-10-01T06:03:16Z" description="This test case is to validate get city With ID positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DELHI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithIdOnly -->
+        <test-method status="PASS" signature="getCityWithIdAndName(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithIdAndName" duration-ms="976" started-at="2020-10-01T06:03:17Z" description="This test case is validate get city name when invalid qParam is passed in request" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NEW_YORK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithIdAndName -->
+        <test-method status="PASS" signature="getCityWithDiffParam(java.lang.String, java.lang.Object, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffParam" duration-ms="869" started-at="2020-10-01T06:03:17Z" data-provider="getCityWithParam" finished-at="2020-10-01T06:03:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffParam -->
+        <test-method status="FAIL" signature="getCityWithInvalidQParam(java.lang.String, java.lang.Object)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithInvalidQParam" duration-ms="890" started-at="2020-10-01T06:03:17Z" description="This test case is to validate get Cities api when wrong Qparam is passed in request ideally API should through Bad request" data-provider="invalidQParam" finished-at="2020-10-01T06:03:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RCiZ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ba]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at apiCalls.Common.getCities(Common.java:48)
+at tests.commonAPI.CommonAPITests.getCityWithInvalidQParam(CommonAPITests.java:93)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithInvalidQParam -->
+        <test-method status="PASS" signature="getCityWithIdOnly(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithIdOnly" duration-ms="939" started-at="2020-10-01T06:03:17Z" description="This test case is to validate get city With ID positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MUMBAI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithIdOnly -->
+        <test-method status="PASS" signature="getCityWithDiffParam(java.lang.String, java.lang.Object, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffParam" duration-ms="839" started-at="2020-10-01T06:03:18Z" data-provider="getCityWithParam" finished-at="2020-10-01T06:03:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ H  I  S  A  R]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffParam -->
+        <test-method status="PASS" signature="getCityWithLocation(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithLocation" duration-ms="889" started-at="2020-10-01T06:03:18Z" description="This Test case is to validate get City API when Location is passed in request" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithLocation -->
+        <test-method status="FAIL" signature="getCityWithInvalidQParam(java.lang.String, java.lang.Object)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithInvalidQParam" duration-ms="784" started-at="2020-10-01T06:03:18Z" description="This test case is to validate get Cities api when wrong Qparam is passed in request ideally API should through Bad request" data-provider="invalidQParam" finished-at="2020-10-01T06:03:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gHs]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at apiCalls.Common.getCities(Common.java:48)
+at tests.commonAPI.CommonAPITests.getCityWithInvalidQParam(CommonAPITests.java:93)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithInvalidQParam -->
+        <test-method status="PASS" signature="getCityWithIdOnly(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithIdOnly" duration-ms="952" started-at="2020-10-01T06:03:18Z" description="This test case is to validate get city With ID positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NEW_YORK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithIdOnly -->
+        <test-method status="PASS" signature="getCityWithName(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithName" duration-ms="803" started-at="2020-10-01T06:03:18Z" description="This test case is to validate get city With name positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithName -->
+        <test-method status="PASS" signature="getCityWithDiffParam(java.lang.String, java.lang.Object, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffParam" duration-ms="745" started-at="2020-10-01T06:03:18Z" data-provider="getCityWithParam" finished-at="2020-10-01T06:03:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[city_ids]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffParam -->
+        <test-method status="PASS" signature="getCityWithLocation(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithLocation" duration-ms="955" started-at="2020-10-01T06:03:19Z" description="This Test case is to validate get City API when Location is passed in request" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DELHI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithLocation -->
+        <test-method status="PASS" signature="getCollectionWithCityId(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCollectionWithCityId" duration-ms="847" started-at="2020-10-01T06:03:19Z" description="This test case is to validate get collection API to positive flow. We will validate the schema as well" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionWithCityId -->
+        <test-method status="PASS" signature="getCityWithDiffParam(java.lang.String, java.lang.Object, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffParam" duration-ms="1062" started-at="2020-10-01T06:03:19Z" data-provider="getCityWithParam" finished-at="2020-10-01T06:03:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[city_ids]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffParam -->
+        <test-method status="PASS" signature="getCityWithName(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithName" duration-ms="996" started-at="2020-10-01T06:03:19Z" description="This test case is to validate get city With name positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DELHI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithName -->
+        <test-method status="PASS" signature="getCityWithLocation(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithLocation" duration-ms="1086" started-at="2020-10-01T06:03:19Z" description="This Test case is to validate get City API when Location is passed in request" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MUMBAI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithLocation -->
+        <test-method status="PASS" signature="getCollectionWithCityId(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCollectionWithCityId" duration-ms="1068" started-at="2020-10-01T06:03:20Z" description="This test case is to validate get collection API to positive flow. We will validate the schema as well" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DELHI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionWithCityId -->
+        <test-method status="PASS" signature="getCityWithName(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithName" duration-ms="823" started-at="2020-10-01T06:03:20Z" description="This test case is to validate get city With name positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MUMBAI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithName -->
+        <test-method status="PASS" signature="getCityWithDiffParam(java.lang.String, java.lang.Object, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffParam" duration-ms="856" started-at="2020-10-01T06:03:20Z" data-provider="getCityWithParam" finished-at="2020-10-01T06:03:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[city_ids]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffParam -->
+        <test-method status="PASS" signature="getCityWithLocation(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithLocation" duration-ms="908" started-at="2020-10-01T06:03:21Z" description="This Test case is to validate get City API when Location is passed in request" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NEW_YORK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithLocation -->
+        <test-method status="PASS" signature="getCollectionWithCityId(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCollectionWithCityId" duration-ms="977" started-at="2020-10-01T06:03:21Z" description="This test case is to validate get collection API to positive flow. We will validate the schema as well" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MUMBAI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionWithCityId -->
+        <test-method status="PASS" signature="getCityWithName(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithName" duration-ms="847" started-at="2020-10-01T06:03:21Z" description="This test case is to validate get city With name positive scenarios" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NEW_YORK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithName -->
+        <test-method status="PASS" signature="getCityWithDiffParam(java.lang.String, java.lang.Object, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffParam" duration-ms="695" started-at="2020-10-01T06:03:21Z" data-provider="getCityWithParam" finished-at="2020-10-01T06:03:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[city_ids]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffParam -->
+        <test-method status="FAIL" signature="getCollectionWithInvalidCityId()[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCollectionWithInvalidCityId" duration-ms="808" started-at="2020-10-01T06:03:21Z" description="This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well" finished-at="2020-10-01T06:03:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [200]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at apiCalls.Common.getCollection(Common.java:60)
+at tests.commonAPI.CommonAPITests.getCollectionWithInvalidCityId(CommonAPITests.java:181)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionWithInvalidCityId -->
+        <test-method status="PASS" signature="getCollectionWithCityId(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCollectionWithCityId" duration-ms="881" started-at="2020-10-01T06:03:22Z" description="This test case is to validate get collection API to positive flow. We will validate the schema as well" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NEW_YORK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionWithCityId -->
+        <test-method status="PASS" signature="getCityWithDiffParam(java.lang.String, java.lang.Object, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffParam" duration-ms="939" started-at="2020-10-01T06:03:22Z" data-provider="getCityWithParam" finished-at="2020-10-01T06:03:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[city_ids]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234543212]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffParam -->
+        <test-method status="FAIL" signature="getCollectionWithInvalidLocation()[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCollectionWithInvalidLocation" duration-ms="833" started-at="2020-10-01T06:03:22Z" description="This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well" finished-at="2020-10-01T06:03:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [500]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [500]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at apiCalls.Common.getCollection(Common.java:60)
+at tests.commonAPI.CommonAPITests.getCollectionWithInvalidLocation(CommonAPITests.java:166)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionWithInvalidLocation -->
+        <test-method status="PASS" signature="getCollectionWithInvalidQParam(java.lang.String, java.lang.String)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCollectionWithInvalidQParam" duration-ms="732" started-at="2020-10-01T06:03:22Z" description="This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well" data-provider="invalidQParam" finished-at="2020-10-01T06:03:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MoMM]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ba]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionWithInvalidQParam -->
+        <test-method status="PASS" signature="getCollectionWithLocation(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCollectionWithLocation" duration-ms="723" started-at="2020-10-01T06:03:23Z" description="This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BANGALORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionWithLocation -->
+        <test-method status="FAIL" signature="getCityWithDiffParam(java.lang.String, java.lang.Object, int)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCityWithDiffParam" duration-ms="813" started-at="2020-10-01T06:03:23Z" data-provider="getCityWithParam" finished-at="2020-10-01T06:03:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[oAYMqMpDA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0] but found [3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [0] but found [3]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at tests.commonAPI.CommonAPITests.getCityWithDiffParam(CommonAPITests.java:77)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCityWithDiffParam -->
+        <test-method status="PASS" signature="getCollectionWithInvalidQParam(java.lang.String, java.lang.String)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCollectionWithInvalidQParam" duration-ms="957" started-at="2020-10-01T06:03:23Z" description="This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well" data-provider="invalidQParam" finished-at="2020-10-01T06:03:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HPp]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionWithInvalidQParam -->
+        <test-method status="PASS" signature="getCollectionWithLocation(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCollectionWithLocation" duration-ms="886" started-at="2020-10-01T06:03:23Z" description="This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DELHI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionWithLocation -->
+        <test-method status="PASS" signature="getCollectionWithLocation(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCollectionWithLocation" duration-ms="920" started-at="2020-10-01T06:03:24Z" description="This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MUMBAI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionWithLocation -->
+        <test-method status="PASS" signature="getCollectionWithLocation(enums.Cities)[pri:0, instance:tests.commonAPI.CommonAPITests@77caeb3e]" name="getCollectionWithLocation" duration-ms="780" started-at="2020-10-01T06:03:25Z" description="This test case is to validate get collection API to positive flow with location in request. We will validate the schema as well" data-provider="getCityByNameId" finished-at="2020-10-01T06:03:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NEW_YORK]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionWithLocation -->
+      </class> <!-- tests.commonAPI.CommonAPITests -->
+    </test> <!-- Free CRM App Test Cases -->
+  </suite> <!-- Practise Project for Zomato -->
+</testng-results>
